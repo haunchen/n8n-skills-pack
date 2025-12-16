@@ -13,12 +13,5 @@
   "homepage": "https://www.frankchen.tw/n8n-skills/",
   "repository": "https://github.com/haunchen/n8n-skills-pack",
   "license": "MIT",
-  "keywords": ["n8n", "workflow", "automation", "ai", "claude", "skill-pack"],
-  "plugins": [
-    {
-      "name": "n8n-skills",
-      "source": "./skills/n8n-skills",
-      "description": "n8n workflow automation skill pack with 542 nodes, covering triggers, data transformation, AI integration, and more."
-    }
-  ]
+  "keywords": ["n8n", "workflow", "automation", "ai", "claude", "skill-pack"]
 }
