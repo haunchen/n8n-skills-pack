@@ -1,0 +1,11 @@
+{
+  "name": "n8n-skills-marketplace",
+  "plugins": [
+    {
+      "name": "n8n-skills-pack",
+      "source": ".",
+      "description": "n8n workflow automation knowledge base for Claude AI",
+      "strict": false
+    }
+  ]
+}
