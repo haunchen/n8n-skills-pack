@@ -1,0 +1,8 @@
+{
+  "name": "n8n-skills",
+  "description": "n8n workflow automation knowledge base for Claude AI",
+  "version": "1.8.0",
+  "author": {
+    "name": "Frank Chen"
+  }
+}

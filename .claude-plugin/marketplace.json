@@ -7,13 +7,12 @@
   "plugins": [
     {
       "name": "n8n-skills",
-      "source": "./skills/n8n-skills",
+      "source": "./n8n-skills",
       "description": "n8n workflow automation knowledge base with 542 nodes, covering triggers, data transformation, AI integration, and more.",
       "version": "1.8.0",
       "author": {
         "name": "Frank Chen"
-      },
-      "strict": false
+      }
     }
   ]
 }
