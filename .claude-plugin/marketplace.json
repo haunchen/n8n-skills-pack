@@ -3,7 +3,7 @@
   "plugins": [
     {
       "name": "n8n-skills-pack",
-      "source": ".",
+      "source": "./",
       "description": "n8n workflow automation knowledge base for Claude AI",
       "strict": false
     }
