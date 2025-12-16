@@ -1,10 +1,18 @@
 {
-  "name": "n8n-skills-marketplace",
+  "name": "n8n-skills-pack",
+  "owner": {
+    "name": "Frank Chen",
+    "email": "frank@frankchen.tw"
+  },
   "plugins": [
     {
-      "name": "n8n-skills-pack",
-      "source": "./",
-      "description": "n8n workflow automation knowledge base for Claude AI",
+      "name": "n8n-skills",
+      "source": "./skills/n8n-skills",
+      "description": "n8n workflow automation knowledge base with 542 nodes, covering triggers, data transformation, AI integration, and more.",
+      "version": "1.8.0",
+      "author": {
+        "name": "Frank Chen"
+      },
       "strict": false
     }
   ]
