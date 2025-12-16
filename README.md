@@ -6,16 +6,20 @@ n8n workflow automation knowledge base for AI assistants.
 
 ## Installation
 
-### Claude Code (One-click Install)
+### Claude Code
 
 ```bash
-/plugin add haunchen/n8n-skills-pack
+# 1. Add marketplace
+/plugin marketplace add haunchen/n8n-skills-pack
+
+# 2. Install plugin
+/plugin install n8n-skills@n8n-skills-pack
 ```
 
 ### Manual Installation
 
 1. Download this repo
-2. Copy the `skills/n8n-skills` directory to `~/.claude/skills/`
+2. Copy the `n8n-skills` directory to your Claude skills folder
 
 ## Contents
 
