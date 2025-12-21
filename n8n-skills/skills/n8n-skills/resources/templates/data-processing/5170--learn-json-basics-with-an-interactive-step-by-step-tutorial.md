@@ -1,7 +1,7 @@
 # 🎓 Learn JSON Basics with an Interactive Step-by-Step Tutorial for Beginners
-> 📊 **Category**: Data Processing & Analysis
-> 👁️ **Views**: 74,178
-> 📅 **Created**: 6/23/2025
+> **Category**: Data Processing & Analysis
+> **Views**: 74,178
+> **Created**: 6/23/2025
 ## Description
 How it works
 
@@ -81,7 +81,7 @@ This workflow is triggered by Execute to Start, goes through 9 transformation st
 ## Author Information
 - **Name**: Lucas Peyrin
 - **Username**: @lucaspeyrin
-- ✓ Verified user
+- Verified user
 ## Related Links
 - [View this template on n8n.io](https://n8n.io/workflows/5170)
 ## Complete Workflow JSON

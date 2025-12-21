@@ -13,21 +13,9 @@ Scrape and control any site with Airtop
 
 ## Available Operations
 
-### Create Session
-Create an Airtop browser session
-- Value: `create`
-
-### Save Profile on Termination
-Save in a profile changes made in your browsing session such as cookies and local storage
-- Value: `save`
-
-### Terminate Session
-Terminate a session
-- Value: `terminate`
-
-### Wait for Download
-Wait for a file download to become available
-- Value: `waitForDownload`
+### Run
+Run an Airtop agent
+- Value: `run`
 
 ## Core Properties
 
@@ -37,12 +25,12 @@ Wait for a file download to become available
 | `url` | string | Yes | `""` | URL from where to fetch the file to upload |
 | `url` | string | Yes | `""` | URL to load in the window |
 | `scrollingMode` | options | Yes | `"automatic"` | Choose the mode of scrolling |
+| `webhookUrl` | string | Yes | `""` | Webhook URL to invoke the Airtop agent. Visit <a href="https://portal.airtop.ai/agents" target="\_blank">Airtop Agents</a> for more information. |
+| `agentParameters` | json | Yes | `"{}"` | Agent's input parameters in JSON format. Visit <a href="https://portal.airtop.ai/agents" target="\_blank">Airtop Agents</a> for more information. |
 | `sessionId` | string | Yes | `"={{ $json[\"sessionId\"] }}"` | The ID of the <a href="https://docs.airtop.ai/guides/how-to/creating-a-session" target="\_blank">Session</a> to use |
 | `profileName` | string | Yes | `""` | The name of the <a href="https://docs.airtop.ai/guides/how-to/saving-a-profile" target="\_blank">Profile</a> to save |
 | `sessionId` | string | Yes | `"={{ $json[\"sessionId\"] }}"` | The ID of the <a href="https://docs.airtop.ai/guides/how-to/creating-a-session" target="\_blank">Session</a> to use |
 | `sessionId` | string | Yes | `"={{ $json[\"sessionId\"] }}"` | The ID of the <a href="https://docs.airtop.ai/guides/how-to/creating-a-session" target="\_blank">Session</a> to use |
-| `sessionId` | string | Yes | `"={{ $json[\"sessionId\"] }}"` | The ID of the <a href="https://docs.airtop.ai/guides/how-to/creating-a-session" target="\_blank">Session</a> to use |
-| `windowId` | string | Yes | `"={{ $json[\"windowId\"] }}"` | The ID of the <a href="https://docs.airtop.ai/guides/how-to/creating-a-session#windows" target="\_blank">Window</a> to use |
 
 ### Property Details
 
@@ -101,14 +89,15 @@ Optional values:
   "parameters": {
     "url": "",
     "scrollingMode": "automatic",
+    "webhookUrl": "",
+    "agentParameters": "{}",
     "sessionId": "={{ $json[\"sessionId\"] }}",
-    "profileName": "",
-    "windowId": "={{ $json[\"windowId\"] }}"
+    "profileName": ""
   }
 }
 ```
 
-### Create Session Example
+### Run Example
 ```json
 {
   "name": "Airtop",
@@ -121,31 +110,11 @@ Optional values:
   "parameters": {
     "url": "",
     "scrollingMode": "automatic",
+    "webhookUrl": "",
+    "agentParameters": "{}",
     "sessionId": "={{ $json[\"sessionId\"] }}",
     "profileName": "",
-    "windowId": "={{ $json[\"windowId\"] }}",
-    "operation": "create"
-  }
-}
-```
-
-### Save Profile on Termination Example
-```json
-{
-  "name": "Airtop",
-  "type": "nodes-base.airtop",
-  "typeVersion": 1,
-  "position": [
-    250,
-    300
-  ],
-  "parameters": {
-    "url": "",
-    "scrollingMode": "automatic",
-    "sessionId": "={{ $json[\"sessionId\"] }}",
-    "profileName": "",
-    "windowId": "={{ $json[\"windowId\"] }}",
-    "operation": "save"
+    "operation": "run"
   }
 }
 ```

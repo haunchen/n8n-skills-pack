@@ -1,7 +1,7 @@
 # Personal Life Manager with Telegram, Google Services & Voice-Enabled AI
-> 💬 **Category**: Communication & Collaboration
-> 👁️ **Views**: 34,342
-> 📅 **Created**: 9/4/2025
+> **Category**: Communication & Collaboration
+> **Views**: 34,342
+> **Created**: 9/4/2025
 ## Description
 How it works:
 This project teaches you to create a personal AI assistant named Jackie that operates through Telegram. Jackie can summarize unread emails, check calendar events, manage Google Tasks, and handle both voice and text interactions. The assistant provides a comprehensive digital life management solution accessible via Telegram messaging.
@@ -103,7 +103,7 @@ This workflow is triggered by Listen for incoming events, uses Window Buffer Mem
 ## Author Information
 - **Name**: Derek Cheung
 - **Username**: @derekcheungsa
-- ✓ Verified user
+- Verified user
 ## Related Links
 - [View this template on n8n.io](https://n8n.io/workflows/8237)
 ## Complete Workflow JSON

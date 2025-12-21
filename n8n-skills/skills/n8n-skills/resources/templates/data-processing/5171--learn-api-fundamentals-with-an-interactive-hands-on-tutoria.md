@@ -1,7 +1,7 @@
 # 🎓 Learn API Fundamentals with an Interactive Hands-On Tutorial Workflow
-> 📊 **Category**: Data Processing & Analysis
-> 👁️ **Views**: 27,067
-> 📅 **Created**: 6/23/2025
+> **Category**: Data Processing & Analysis
+> **Views**: 27,067
+> **Created**: 6/23/2025
 ## Description
 How it works
 
@@ -108,7 +108,7 @@ This workflow is triggered by Start Tutorial, 1. The Kitchen (GET /menu), 2. The
 ## Author Information
 - **Name**: Lucas Peyrin
 - **Username**: @lucaspeyrin
-- ✓ Verified user
+- Verified user
 ## Related Links
 - [View this template on n8n.io](https://n8n.io/workflows/5171)
 ## Complete Workflow JSON

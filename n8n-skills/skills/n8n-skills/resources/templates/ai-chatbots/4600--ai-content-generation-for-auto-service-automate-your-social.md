@@ -1,7 +1,7 @@
 # 🤖 AI content generation for Auto Service 🚘 Automate your social media📲!
-> 🤖 **Category**: AI & Chatbots
-> 👁️ **Views**: 26,664
-> 📅 **Created**: 6/2/2025
+> **Category**: AI & Chatbots
+> **Views**: 26,664
+> **Created**: 6/2/2025
 ## Description
 
 

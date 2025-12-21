@@ -1,7 +1,7 @@
 # Create & Upload AI-Generated ASMR YouTube Shorts with Seedance, Fal AI, and GPT-4
-> 🤖 **Category**: AI & Chatbots
-> 👁️ **Views**: 24,339
-> 📅 **Created**: 6/21/2025
+> **Category**: AI & Chatbots
+> **Views**: 24,339
+> **Created**: 6/21/2025
 ## Description
 
 
@@ -150,7 +150,7 @@ This workflow is triggered by Schedule Trigger, uses Think, OpenAI Chat Model, P
 ## Author Information
 - **Name**: Bilel Aroua
 - **Username**: @bilsimaging
-- ✓ Verified user
+- Verified user
 ## Related Links
 - [View this template on n8n.io](https://n8n.io/workflows/5110)
 ## Complete Workflow JSON

@@ -1,28 +1,28 @@
 # n8n Workflow Templates
 
-We have collected 100 popular workflow templates from n8n.io, organized by use case categories.
+We have collected 20 popular workflow templates from n8n.io, organized by use case categories.
 
 ## Category Navigation
 
-### 🤖 [AI & Chatbots](ai-chatbots/README.md)
+### [AI & Chatbots](ai-chatbots/README.md)
 
 AI Agents, RAG systems, intelligent conversational bots
 
 **Template Count**: 15
 
-### 📱 [Social Media & Video](social-media/README.md)
+### [Social Media & Video](social-media/README.md)
 
 TikTok, Instagram, YouTube automation and AI video generation
 
 **Template Count**: 1
 
-### 📊 [Data Processing & Analysis](data-processing/README.md)
+### [Data Processing & Analysis](data-processing/README.md)
 
 Google Sheets, database integration, data analysis workflows
 
 **Template Count**: 3
 
-### 💬 [Communication & Collaboration](communication/README.md)
+### [Communication & Collaboration](communication/README.md)
 
 Email, WhatsApp, Telegram, Slack automation
 
@@ -38,4 +38,4 @@ Email, WhatsApp, Telegram, Slack automation
 ## Statistics
 
 - Total Templates: 20
-- Total Views: 1,418,692
+- Total Views: 1,286,682

@@ -1,7 +1,7 @@
 # ✨🤖Automate Multi-Platform Social Media Content Creation with AI
-> 🤖 **Category**: AI & Chatbots
-> 👁️ **Views**: 205,470
-> 📅 **Created**: 3/3/2025
+> **Category**: AI & Chatbots
+> **Views**: 205,470
+> **Created**: 3/3/2025
 ## Description
 Automate Multi-Platform Social Media Content Creation with AI
 
@@ -177,7 +177,7 @@ This workflow is triggered by Submit Social Post Details, uses Social Media Cont
 ## Author Information
 - **Name**: Joseph LePage
 - **Username**: @joe
-- ✓ Verified user
+- Verified user
 ## Related Links
 - [View this template on n8n.io](https://n8n.io/workflows/3066)
 ## Complete Workflow JSON

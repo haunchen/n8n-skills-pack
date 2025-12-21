@@ -1,7 +1,7 @@
 # Build Your First AI Agent
-> 🤖 **Category**: AI & Chatbots
-> 👁️ **Views**: 99,862
-> 📅 **Created**: 7/22/2025
+> **Category**: AI & Chatbots
+> **Views**: 99,862
+> **Created**: 7/22/2025
 ## Description
 How it works
 
@@ -84,7 +84,7 @@ This workflow is triggered by Example Chat, uses Your First AI Agent, Conversati
 ## Author Information
 - **Name**: Lucas Peyrin
 - **Username**: @lucaspeyrin
-- ✓ Verified user
+- Verified user
 ## Related Links
 - [View this template on n8n.io](https://n8n.io/workflows/6270)
 ## Complete Workflow JSON

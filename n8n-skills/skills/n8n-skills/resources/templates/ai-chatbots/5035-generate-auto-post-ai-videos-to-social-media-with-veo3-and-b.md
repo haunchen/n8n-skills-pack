@@ -1,7 +1,7 @@
 # Generate & Auto-post AI Videos to Social Media with Veo3 and Blotato
-> 🤖 **Category**: AI & Chatbots
-> 👁️ **Views**: 71,279
-> 📅 **Created**: 6/18/2025
+> **Category**: AI & Chatbots
+> **Views**: 71,279
+> **Created**: 6/18/2025
 ## Description
 
 Automate video creation with Veo3 and auto-post to Instagram, TikTok via Blotato
@@ -141,7 +141,7 @@ This workflow is triggered by Trigger: Run Daily Script Generator, uses AI Agent
 ## Author Information
 - **Name**: Dr. Firas
 - **Username**: @drfiras
-- ✓ Verified user
+- Verified user
 ## Related Links
 - [View this template on n8n.io](https://n8n.io/workflows/5035)
 ## Complete Workflow JSON

@@ -16,6 +16,15 @@ Handle AWS SNS events via webhooks
 | Property Name | Type | Required | Default | Description |
 |---------|------|------|--------|------|
 | `topic` | resourceLocator | Yes | `{"mode":"list","value":""}` | - |
+| `authentication` | options | No | `"iam"` | - |
+
+### Property Details
+
+#### Authentication (`authentication`)
+
+Optional values:
+- `iam`: AWS (IAM)
+- `assumeRole`: AWS (Assume Role)
 
 ## Connection Guide
 

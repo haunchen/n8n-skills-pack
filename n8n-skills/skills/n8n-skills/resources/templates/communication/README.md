@@ -1,4 +1,4 @@
-# 💬 Communication & Collaboration
+# Communication & Collaboration
 
 Email, WhatsApp, Telegram, Slack automation
 

@@ -24,12 +24,19 @@ Sends data to AWS Rekognition
 | `bucket` | string | Yes | `""` | Name of the S3 bucket |
 | `name` | string | Yes | `""` | S3 object key name |
 | `binaryPropertyName` | string | Yes | `"data"` | - |
+| `authentication` | options | No | `"iam"` | - |
 | `resource` | options | No | `"image"` | - |
 | `operation` | options | No | `"analyze"` | - |
 | `type` | options | No | `"detectFaces"` | - |
 | `additionalFields` | collection | No | `{}` | - |
 
 ### Property Details
+
+#### Authentication (`authentication`)
+
+Optional values:
+- `iam`: AWS (IAM)
+- `assumeRole`: AWS (Assume Role)
 
 #### Resource (`resource`)
 

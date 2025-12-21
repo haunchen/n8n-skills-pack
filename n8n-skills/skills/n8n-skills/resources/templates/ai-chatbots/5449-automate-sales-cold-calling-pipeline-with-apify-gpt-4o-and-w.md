@@ -1,7 +1,7 @@
 # Automate Sales Cold Calling Pipeline with Apify, GPT-4o, and WhatsApp
-> 🤖 **Category**: AI & Chatbots
-> 👁️ **Views**: 21,581
-> 📅 **Created**: 6/29/2025
+> **Category**: AI & Chatbots
+> **Views**: 21,581
+> **Created**: 6/29/2025
 ## Description
 This workflow contains community nodes that are only compatible with the self-hosted version of n8n. 
 
@@ -237,7 +237,7 @@ This workflow is triggered by Google Drive Trigger, When clicking ‘Execute wor
 ## Author Information
 - **Name**: Khairul Muhtadin
 - **Username**: @khmuhtadin
-- ✓ Verified user
+- Verified user
 ## Related Links
 - [View this template on n8n.io](https://n8n.io/workflows/5449)
 ## Complete Workflow JSON

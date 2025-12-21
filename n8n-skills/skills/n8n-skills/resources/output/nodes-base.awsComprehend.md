@@ -30,6 +30,7 @@ Analyse the sentiment of the text
 | Property Name | Type | Required | Default | Description |
 |---------|------|------|--------|------|
 | `resource` | options | No | `"text"` | The resource to perform |
+| `authentication` | options | No | `"iam"` | - |
 | `operation` | options | No | `"detectDominantLanguage"` | - |
 | `languageCode` | options | No | `"en"` | The language code for text |
 | `additionalFields` | collection | No | `{}` | - |
@@ -44,6 +45,12 @@ The resource to perform
 
 Optional values:
 - `text`: Text
+
+#### Authentication (`authentication`)
+
+Optional values:
+- `iam`: AWS (IAM)
+- `assumeRole`: AWS (Assume Role)
 
 #### Operation (`operation`)
 

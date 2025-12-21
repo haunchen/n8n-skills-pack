@@ -1,6 +1,6 @@
 # Data Transformation Nodes
 
-Total: 220 nodes (high-priority: 15, other: 205)
+Total: 223 nodes (high-priority: 15, other: 208)
 
 ## High-Priority Nodes
 
@@ -24,11 +24,11 @@ The following nodes have individual detailed documentation:
 
 ## Other Nodes
 
-The following 205 nodes are merged into 3 files:
+The following 208 nodes are merged into 3 files:
 
 - [Part 1](./transform-merged-1.md) - Contains 100 nodes
 - [Part 2](./transform-merged-2.md) - Contains 100 nodes
-- [Part 3](./transform-merged-3.md) - Contains 5 nodes
+- [Part 3](./transform-merged-3.md) - Contains 8 nodes
 
 ### Complete Node List
 
@@ -39,6 +39,7 @@ The following 205 nodes are merged into 3 files:
 - Anthropic Chat Model
 - Auto-fixing Output Parser
 - AWS Bedrock Chat Model
+- Azure AI Search Vector Store
 - Azure Cosmos DB
 - Azure OpenAI Chat Model
 - Azure Storage
@@ -105,6 +106,7 @@ The following 205 nodes are merged into 3 files:
 - GoToWebinar
 - Grafana
 - Groq Chat Model
+- Guardrails
 - Hacker News
 - HighLevel
 - HTML
@@ -128,6 +130,7 @@ The following 205 nodes are merged into 3 files:
 - LoneScale
 - Mailcheck
 - Marketstack
+- MCP Client
 - Metabase
 - Microsoft Entra ID
 - Microsoft Graph Security

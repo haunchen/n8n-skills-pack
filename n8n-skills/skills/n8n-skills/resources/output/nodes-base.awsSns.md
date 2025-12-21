@@ -33,10 +33,17 @@ Publish a message to a topic
 | `message` | string | Yes | `""` | The message you want to send |
 | `name` | string | Yes | `""` | - |
 | `topic` | resourceLocator | Yes | `{"mode":"list","value":""}` | - |
+| `authentication` | options | No | `"iam"` | - |
 | `operation` | options | No | `"publish"` | - |
 | `options` | collection | No | `{}` | - |
 
 ### Property Details
+
+#### Authentication (`authentication`)
+
+Optional values:
+- `iam`: AWS (IAM)
+- `assumeRole`: AWS (Assume Role)
 
 #### Operation (`operation`)
 

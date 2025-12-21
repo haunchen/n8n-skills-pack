@@ -11,6 +11,7 @@ This file contains complete information for 100 nodes.
 - [Anthropic Chat Model](#anthropic-chat-model)
 - [Auto-fixing Output Parser](#auto-fixing-output-parser)
 - [AWS Bedrock Chat Model](#aws-bedrock-chat-model)
+- [Azure AI Search Vector Store](#azure-ai-search-vector-store)
 - [Azure OpenAI Chat Model](#azure-openai-chat-model)
 - [Basic LLM Chain](#basic-llm-chain)
 - [Binary Input Loader](#binary-input-loader)
@@ -50,6 +51,7 @@ This file contains complete information for 100 nodes.
 - [Lemonade Chat Model](#lemonade-chat-model)
 - [Lemonade Model](#lemonade-model)
 - [Limit](#limit)
+- [MCP Client](#mcp-client)
 - [Milvus Vector Store](#milvus-vector-store)
 - [Mistral Cloud Chat Model](#mistral-cloud-chat-model)
 - [MongoDB Atlas Vector Store](#mongodb-atlas-vector-store)
@@ -88,14 +90,12 @@ This file contains complete information for 100 nodes.
 - [Summarize](#summarize)
 - [Supabase Vector Store](#supabase-vector-store)
 - [Supabase: Insert](#supabase-insert)
-- [Supabase: Load](#supabase-load)
 - [Text Classifier](#text-classifier)
 - [Think Tool](#think-tool)
 - [Token Splitter](#token-splitter)
 - [Vector Store Question Answer Tool](#vector-store-question-answer-tool)
 - [Vector Store Retriever](#vector-store-retriever)
 - [Vercel AI Gateway Chat Model](#vercel-ai-gateway-chat-model)
-- [Weaviate Vector Store](#weaviate-vector-store)
 - [Wikipedia](#wikipedia)
 - [Wolfram|Alpha](#wolframalpha)
 - [Workflow Retriever](#workflow-retriever)
@@ -226,6 +226,7 @@ Generates an action plan and executes it. Can use external tools.
 
 | Property Name | Type | Required | Default | Description |
 |---------|------|------|--------|------|
+| `text` | string | Yes | `"={{ $json.guardrailsInput }}"` | - |
 | `text` | string | Yes | `"={{ $json.chatInput }}"` | - |
 | `text` | string | Yes | `""` | - |
 | `promptType` | options | No | `"auto"` | - |
@@ -242,6 +243,7 @@ Generates an action plan and executes it. Can use external tools.
 
 Optional values:
 - `auto`: Connected Chat Trigger Node - Looks for an input field called 'chatInput' that is coming from a directly connected Chat Trigger
+- `guardrails`: Connected Guardrails Node - Looks for an input field called 'guardrailsInput' that is coming from a directly connected Guardrails Node
 - `define`: Define below - Use an expression to reference data in previous nodes or enter static text
 
 ##### Options (`options`)
@@ -841,6 +843,121 @@ Optional values:
 
 ---
 
+## Azure AI Search Vector Store
+
+## Basic Information
+
+- Node Type: `nodes-langchain.vectorStoreAzureAISearch`
+- Category: transform
+- Package: @n8n/n8n-nodes-langchain
+- Requires Credentials: Yes
+
+### Description
+
+Work with your data in Azure AI Search Vector Store
+
+### Core Properties
+
+| Property Name | Type | Required | Default | Description |
+|---------|------|------|--------|------|
+| `toolName` | string | Yes | `""` | Name of the vector store |
+| `toolDescription` | string | Yes | `""` | Explain to the LLM what this tool does, a good, specific description would allow LLMs to produce expected results much more often |
+| `indexName` | string | Yes | `"n8n-vectorstore"` | The name of the Azure AI Search index. Will be created automatically if it does not exist. |
+| `prompt` | string | Yes | `""` | Search prompt to retrieve matching documents from the vector store using similarity-based ranking |
+| `id` | string | Yes | `""` | ID of an embedding entry |
+| `mode` | options | No | `"retrieve"` | - |
+| `options` | collection | No | `{}` | - |
+| `options` | collection | No | `{}` | - |
+| `options` | collection | No | `{}` | - |
+| `embeddingBatchSize` | number | No | `200` | Number of documents to embed in a single batch |
+
+#### Property Details
+
+##### Operation Mode (`mode`)
+
+Optional values:
+- `load`: Get Many - Get many ranked documents from vector store for query
+- `insert`: Insert Documents - Insert documents into vector store
+- `retrieve`: Retrieve Documents (As Vector Store for Chain/Tool) - Retrieve documents from vector store to be used as vector store with AI nodes
+- `retrieve-as-tool`: Retrieve Documents (As Tool for AI Agent) - Retrieve documents from vector store to be used as tool with AI nodes
+- `update`: Update Documents - Update documents in vector store by ID
+
+##### Options (`options`)
+
+Optional values:
+- `undefined`: clearIndex - Whether to delete and recreate the index before inserting new data. Warning: This will reset any custom index configuration (semantic ranking, analyzers, etc.) to defaults.
+
+##### Options (`options`)
+
+Optional values:
+- `undefined`: queryType - The type of search query to perform
+- `undefined`: filter - Filter results using OData syntax. Use metadata/fieldName for metadata fields. \<a href="https://learn.microsoft.com/en-us/azure/search/search-query-odata-filter" target="\_blank"\>Learn more\</a\>.
+- `undefined`: semanticConfiguration - Name of the semantic configuration for semantic ranking (optional)
+
+##### Options (`options`)
+
+Optional values:
+- `undefined`: queryType - The type of search query to perform
+- `undefined`: filter - Filter results using OData syntax. Use metadata/fieldName for metadata fields. \<a href="https://learn.microsoft.com/en-us/azure/search/search-query-odata-filter" target="\_blank"\>Learn more\</a\>.
+- `undefined`: semanticConfiguration - Name of the semantic configuration for semantic ranking (optional)
+
+### Connection Guide
+
+### Connection Type
+
+- Input Types: `main` (general data flow)
+- Output Types: `main` (general data flow)
+- Output Count: 0 (configurable)
+
+### Can Receive From
+
+1. Webhook - via `main` connection
+2. ActiveCampaign Trigger - via `main` connection
+3. Acuity Scheduling Trigger - via `main` connection
+4. Affinity Trigger - via `main` connection
+5. Airtable Trigger - via `main` connection
+6. AMQP Trigger - via `main` connection
+7. Asana Trigger - via `main` connection
+8. Autopilot Trigger - via `main` connection
+9. AWS SNS Trigger - via `main` connection
+10. Bitbucket Trigger - via `main` connection
+
+### Can Connect To
+
+1. Code - via `main` connection
+2. Function - via `main` connection
+3. HTTP Request - via `main` connection
+4. If - via `main` connection
+5. Set - via `main` connection
+6. Merge - via `main` connection
+7. Airtable - via `main` connection
+8. Discord - via `main` connection
+9. Dropbox - via `main` connection
+10. GitHub - via `main` connection
+### JSON Configuration Examples
+
+#### Basic Configuration
+```json
+{
+  "name": "Azure AI Search Vector Store",
+  "type": "nodes-langchain.vectorStoreAzureAISearch",
+  "typeVersion": 1,
+  "position": [
+    250,
+    300
+  ],
+  "parameters": {
+    "toolName": "",
+    "toolDescription": "",
+    "indexName": "n8n-vectorstore",
+    "prompt": "",
+    "id": ""
+  }
+}
+```
+
+---
+
 ## Azure OpenAI Chat Model
 
 ## Basic Information
@@ -943,13 +1060,13 @@ A simple chain to prompt a large language model
 | `prompt` | string | Yes | `"={{ $json.input }}"` | - |
 | `prompt` | string | Yes | `"={{ $json.chat_input }}"` | - |
 | `prompt` | string | Yes | `"={{ $json.chatInput }}"` | - |
+| `text` | string | Yes | `"={{ $json.guardrailsInput }}"` | - |
 | `text` | string | Yes | `"={{ $json.chatInput }}"` | - |
 | `text` | string | Yes | `""` | - |
 | `batching` | collection | No | `{}` | Batch processing options for rate limiting |
 | `promptType` | options | No | `"auto"` | - |
 | `messages` | fixedCollection | No | `{}` | - |
 | `notice` | notice | No | `""` | - |
-| `hasOutputParser` | boolean | No | `false` | - |
 
 #### Property Details
 
@@ -965,6 +1082,7 @@ Optional values:
 
 Optional values:
 - `auto`: Connected Chat Trigger Node - Looks for an input field called 'chatInput' that is coming from a directly connected Chat Trigger
+- `guardrails`: Connected Guardrails Node - Looks for an input field called 'guardrailsInput' that is coming from a directly connected Guardrails Node
 - `define`: Define below - Use an expression to reference data in previous nodes or enter static text
 
 ##### Chat Messages (if Using a Chat Model) (`messages`)
@@ -2693,8 +2811,8 @@ Transcribes audio into the text
 | `modelId` | resourceLocator | Yes | `{"mode":"list","value":""}` | - |
 | `modelId` | resourceLocator | Yes | `{"mode":"list","value":""}` | - |
 | `modelId` | resourceLocator | Yes | `{"mode":"list","value":""}` | - |
+| `modelId` | resourceLocator | Yes | `{"mode":"list","value":""}` | - |
 | `resource` | options | No | `"text"` | - |
-| `operation` | options | No | `"transcribe"` | - |
 
 #### Property Details
 
@@ -2707,12 +2825,6 @@ Optional values:
 - `image`: Image
 - `text`: Text
 - `video`: Video
-
-##### Operation (`operation`)
-
-Optional values:
-- `analyze`: Analyze Audio - Take in audio and answer questions about it
-- `transcribe`: Transcribe a Recording - Transcribes audio into the text
 
 ### Connection Guide
 
@@ -3785,6 +3897,128 @@ Optional values:
 
 ---
 
+## MCP Client
+
+## Basic Information
+
+- Node Type: `nodes-langchain.mcpClient`
+- Category: transform
+- Package: @n8n/n8n-nodes-langchain
+- Requires Credentials: Yes
+
+### Description
+
+Standalone MCP Client
+
+### Core Properties
+
+| Property Name | Type | Required | Default | Description |
+|---------|------|------|--------|------|
+| `endpointUrl` | string | Yes | `""` | The URL of the MCP server to connect to |
+| `tool` | resourceLocator | Yes | `{"mode":"list","value":""}` | The tool to use |
+| `parameters` | resourceMapper | Yes | `{"mappingMode":"defineBelow","value":null}` | - |
+| `authentication` | options | No | `"none"` | The way to authenticate with your endpoint |
+| `credentials` | credentials | No | `""` | - |
+| `serverTransport` | options | No | `"httpStreamable"` | The transport used by your endpoint |
+| `options` | collection | No | `{}` | Additional options to add |
+| `inputMode` | options | No | `"manual"` | - |
+| `jsonInput` | json | No | `"{\n  \"my_field_1\": \"value\",\n  \"my_field_2\": 1\n}\n"` | - |
+
+#### Property Details
+
+##### Authentication (`authentication`)
+
+The way to authenticate with your endpoint
+
+Optional values:
+- `bearerAuth`: Bearer Auth
+- `headerAuth`: Header Auth
+- `mcpOAuth2Api`: MCP OAuth2
+- `multipleHeadersAuth`: Multiple Headers Auth
+- `none`: None
+
+##### Server Transport (`serverTransport`)
+
+The transport used by your endpoint
+
+Optional values:
+- `httpStreamable`: HTTP Streamable
+- `sse`: Server Sent Events (Deprecated)
+
+##### Options (`options`)
+
+Additional options to add
+
+Optional values:
+- `undefined`: convertToBinary - Whether to convert images and audio to binary data. If false, images and audio will be returned as base64 encoded strings.
+- `undefined`: timeout - Time in ms to wait for tool calls to finish
+
+##### Input Mode (`inputMode`)
+
+Optional values:
+- `manual`: Manual - Manually specify the input data for each tool parameter
+- `json`: JSON - Specify the input data as a JSON object
+
+### Connection Guide
+
+### Connection Type
+
+- Input Types: `main` (general data flow)
+- Output Types: `main` (general data flow)
+
+### Can Receive From
+
+1. Webhook - via `main` connection
+2. ActiveCampaign Trigger - via `main` connection
+3. Acuity Scheduling Trigger - via `main` connection
+4. Affinity Trigger - via `main` connection
+5. Airtable Trigger - via `main` connection
+6. AMQP Trigger - via `main` connection
+7. Asana Trigger - via `main` connection
+8. Autopilot Trigger - via `main` connection
+9. AWS SNS Trigger - via `main` connection
+10. Bitbucket Trigger - via `main` connection
+
+### Can Connect To
+
+1. Code - via `main` connection
+2. Function - via `main` connection
+3. HTTP Request - via `main` connection
+4. If - via `main` connection
+5. Set - via `main` connection
+6. Merge - via `main` connection
+7. Airtable - via `main` connection
+8. Discord - via `main` connection
+9. Dropbox - via `main` connection
+10. GitHub - via `main` connection
+### JSON Configuration Examples
+
+#### Basic Configuration
+```json
+{
+  "name": "MCP Client",
+  "type": "nodes-langchain.mcpClient",
+  "typeVersion": 1,
+  "position": [
+    250,
+    300
+  ],
+  "parameters": {
+    "endpointUrl": "",
+    "tool": {
+      "mode": "list",
+      "value": ""
+    },
+    "parameters": {
+      "mappingMode": "defineBelow",
+      "value": null
+    }
+  }
+}
+```
+
+---
+
 ## Milvus Vector Store
 
 ## Basic Information
@@ -4656,11 +4890,11 @@ Creates audio from a text prompt
 - Value: `generate`
 
 ### Transcribe a Recording
-Transcribes audio into the text
+Transcribes audio into text
 - Value: `transcribe`
 
 ### Translate a Recording
-Translate audio into the text in the english language
+Translates audio into text in English
 - Value: `translate`
 
 ### Core Properties
@@ -4928,7 +5162,10 @@ For advanced usage with an AI chain
 |---------|------|------|--------|------|
 | `model` | resourceLocator | Yes | `{"mode":"list","value":"gpt-4.1-mini"}` | The model. Choose from the list, or specify an ID. |
 | `options` | collection | No | `{}` | Additional options to add |
+| `builtInTools` | collection | No | `{}` | - |
 | `model` | options | No | `"gpt-4o-mini"` | The model which will generate the completion. <a href="https://beta.openai.com/docs/models/overview">Learn more</a>. |
+| `responsesApiEnabled` | boolean | No | `true` | Whether to use the Responses API to generate the response. <a href="https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.lmchatopenai/#use-responses-api">Learn more</a>. |
+| `notice` | notice | No | `""` | - |
 | `notice` | notice | No | `""` | - |
 | `notice` | notice | No | `""` | - |
 | `notice` | notice | No | `""` | - |
@@ -4944,12 +5181,28 @@ Optional values:
 - `undefined`: frequencyPenalty - Positive values penalize new tokens based on their existing frequency in the text so far, decreasing the model's likelihood to repeat the same line verbatim
 - `undefined`: maxTokens - The maximum number of tokens to generate in the completion. Most models have a context length of 2048 tokens (except for the newest models, which support 32,768).
 - `undefined`: responseFormat
+- `undefined`: responseFormat
+- `undefined`: textFormat
 - `undefined`: presencePenalty - Positive values penalize new tokens based on whether they appear in the text so far, increasing the model's likelihood to talk about new topics
 - `undefined`: temperature - Controls randomness: Lowering results in less random completions. As the temperature approaches zero, the model will become deterministic and repetitive.
 - `undefined`: reasoningEffort - Controls the amount of reasoning tokens to use. A value of "low" will favor speed and economical token usage, "high" will favor more complete reasoning at the cost of more tokens generated and slower responses.
 - `undefined`: timeout - Maximum amount of time a request is allowed to take in milliseconds
 - `undefined`: maxRetries - Maximum number of retries to attempt
 - `undefined`: topP - Controls diversity via nucleus sampling: 0.5 means half of all likelihood-weighted options are considered. We generally recommend altering this or temperature but not both.
+- `undefined`: conversationId - The conversation that this response belongs to. Input items and output items from this response are automatically added to this conversation after this response completes.
+- `undefined`: promptCacheKey - Used by OpenAI to cache responses for similar requests to optimize your cache hit rates
+- `undefined`: safetyIdentifier - A stable identifier used to help detect users of your application that may be violating OpenAI's usage policies. The IDs should be a string that uniquely identifies each user.
+- `undefined`: serviceTier - The service tier to use for the request
+- `undefined`: metadata - Set of 16 key-value pairs that can be attached to an object. This can be useful for storing additional information about the object in a structured format, and querying for objects via API or the dashboard. Keys are strings with a maximum length of 64 characters. Values are strings with a maximum length of 512 characters.
+- `undefined`: topLogprobs - An integer between 0 and 20 specifying the number of most likely tokens to return at each token position, each with an associated log probability
+- `undefined`: promptConfig - Configure the reusable prompt template configured via OpenAI Dashboard. \<a href="https://platform.openai.com/docs/guides/prompt-engineering#reusable-prompts"\>Learn more\</a\>.
+
+##### Built-in Tools (`builtInTools`)
+
+Optional values:
+- `undefined`: webSearch
+- `undefined`: fileSearch
+- `undefined`: codeInterpreter - Whether to allow the model to execute code in a sandboxed environment
 
 ### Connection Guide
 
@@ -5743,6 +5996,7 @@ Answer questions about retrieved documents
 | `query` | string | Yes | `"={{ $json.input }}"` | - |
 | `query` | string | Yes | `"={{ $json.chat_input }}"` | - |
 | `query` | string | Yes | `"={{ $json.chatInput }}"` | - |
+| `text` | string | Yes | `"={{ $json.guardrailsInput }}"` | - |
 | `text` | string | Yes | `"={{ $json.chatInput }}"` | - |
 | `text` | string | Yes | `""` | - |
 | `promptType` | options | No | `"auto"` | - |
@@ -5755,6 +6009,7 @@ Answer questions about retrieved documents
 
 Optional values:
 - `auto`: Connected Chat Trigger Node - Looks for an input field called 'chatInput' that is coming from a directly connected Chat Trigger
+- `guardrails`: Connected Guardrails Node - Looks for an input field called 'guardrailsInput' that is coming from a directly connected Guardrails Node
 - `define`: Define below - Use an expression to reference data in previous nodes or enter static text
 
 ##### Options (`options`)
@@ -7330,88 +7585,6 @@ This AI node requires the following special inputs:
 
 ---
 
-## Supabase: Load
-
-## Basic Information
-
-- Node Type: `nodes-langchain.vectorStoreSupabaseLoad`
-- Category: transform
-- Package: @n8n/n8n-nodes-langchain
-- Requires Credentials: Yes
-
-### Description
-
-Load data from Supabase Vector Store index
-
-### Core Properties
-
-| Property Name | Type | Required | Default | Description |
-|---------|------|------|--------|------|
-| `queryName` | string | Yes | `"match_documents"` | Name of the query to use for matching documents |
-| `tableName` | resourceLocator | Yes | `{"mode":"list","value":""}` | - |
-| `options` | collection | No | `{}` | - |
-
-#### Property Details
-
-##### Options (`options`)
-
-Optional values:
-- `undefined`: metadata - Metadata to filter the document by
-
-### Connection Guide
-
-### Connection Type
-
-- Input Types: `ai_embedding` (embedding)
-- Output Types: `ai_vectorStore` (vector Store)
-
-### Can Receive From
-
-1. Embeddings Cohere - via `ai_embedding` connection
-2. Embeddings AWS Bedrock - via `ai_embedding` connection
-3. Embeddings Azure OpenAI - via `ai_embedding` connection
-4. Embeddings Google Gemini - via `ai_embedding` connection
-5. Embeddings Google Vertex - via `ai_embedding` connection
-6. Embeddings Hugging Face Inference - via `ai_embedding` connection
-7. Embeddings Mistral Cloud - via `ai_embedding` connection
-8. Embeddings OpenAI - via `ai_embedding` connection
-9. Embeddings Lemonade - via `ai_embedding` connection
-10. Embeddings Ollama - via `ai_embedding` connection
-
-### Can Connect To
-
-1. Vector Store Retriever - via `ai_vectorStore` connection
-2. Vector Store Question Answer Tool - via `ai_vectorStore` connection
-
-### Special Requirements
-
-This AI node requires the following special inputs:
-
-- embedding (optional)
-### JSON Configuration Examples
-
-#### Basic Configuration
-```json
-{
-  "name": "Supabase: Load",
-  "type": "nodes-langchain.vectorStoreSupabaseLoad",
-  "typeVersion": 1,
-  "position": [
-    250,
-    300
-  ],
-  "parameters": {
-    "queryName": "match_documents",
-    "tableName": {
-      "mode": "list",
-      "value": ""
-    }
-  }
-}
-```
-
----
-
 ## Text Classifier
 
 ## Basic Information
@@ -7810,142 +7983,6 @@ Optional values:
     300
   ],
   "parameters": {}
-}
-```
-
----
-
-## Weaviate Vector Store
-
-## Basic Information
-
-- Node Type: `nodes-langchain.vectorStoreWeaviate`
-- Category: transform
-- Package: @n8n/n8n-nodes-langchain
-- Requires Credentials: Yes
-
-### Description
-
-Work with your data in a Weaviate Cluster
-
-### Core Properties
-
-| Property Name | Type | Required | Default | Description |
-|---------|------|------|--------|------|
-| `toolName` | string | Yes | `""` | Name of the vector store |
-| `toolDescription` | string | Yes | `""` | Explain to the LLM what this tool does, a good, specific description would allow LLMs to produce expected results much more often |
-| `prompt` | string | Yes | `""` | Search prompt to retrieve matching documents from the vector store using similarity-based ranking |
-| `id` | string | Yes | `""` | ID of an embedding entry |
-| `weaviateCollection` | resourceLocator | Yes | `{"mode":"list","value":""}` | - |
-| `mode` | options | No | `"retrieve"` | - |
-| `options` | collection | No | `{}` | - |
-| `options` | collection | No | `{}` | - |
-| `options` | collection | No | `{}` | - |
-| `embeddingBatchSize` | number | No | `200` | Number of documents to embed in a single batch |
-
-#### Property Details
-
-##### Operation Mode (`mode`)
-
-Optional values:
-- `load`: Get Many - Get many ranked documents from vector store for query
-- `insert`: Insert Documents - Insert documents into vector store
-- `retrieve`: Retrieve Documents (As Vector Store for Chain/Tool) - Retrieve documents from vector store to be used as vector store with AI nodes
-- `retrieve-as-tool`: Retrieve Documents (As Tool for AI Agent) - Retrieve documents from vector store to be used as tool with AI nodes
-
-##### Options (`options`)
-
-Optional values:
-- `undefined`: tenant - Tenant Name. Collection must have been created with tenant support enabled.
-- `undefined`: textKey - The key in the document that contains the embedded text
-- `undefined`: skip_init_checks - Whether to skip init checks while instantiating the client
-- `undefined`: timeout_init - Number of timeout seconds for initial checks
-- `undefined`: timeout_insert - Number of timeout seconds for inserts
-- `undefined`: timeout_query - Number of timeout seconds for queries
-- `undefined`: proxy_grpc - Proxy to use for GRPC
-- `undefined`: clearStore - Whether to clear the Collection/Tenant before inserting new data
-
-##### Options (`options`)
-
-Optional values:
-- `undefined`: searchFilterJson - Filter pageContent or metadata using this \<a href="https://weaviate.io/" target="\_blank"\>filtering syntax\</a\>
-- `undefined`: metadataKeys - Select the metadata to retrieve along the content
-- `undefined`: tenant - Tenant Name. Collection must have been created with tenant support enabled.
-- `undefined`: textKey - The key in the document that contains the embedded text
-- `undefined`: skip_init_checks - Whether to skip init checks while instantiating the client
-- `undefined`: timeout_init - Number of timeout seconds for initial checks
-- `undefined`: timeout_insert - Number of timeout seconds for inserts
-- `undefined`: timeout_query - Number of timeout seconds for queries
-- `undefined`: proxy_grpc - Proxy to use for GRPC
-
-##### Options (`options`)
-
-Optional values:
-- `undefined`: searchFilterJson - Filter pageContent or metadata using this \<a href="https://weaviate.io/" target="\_blank"\>filtering syntax\</a\>
-- `undefined`: metadataKeys - Select the metadata to retrieve along the content
-- `undefined`: tenant - Tenant Name. Collection must have been created with tenant support enabled.
-- `undefined`: textKey - The key in the document that contains the embedded text
-- `undefined`: skip_init_checks - Whether to skip init checks while instantiating the client
-- `undefined`: timeout_init - Number of timeout seconds for initial checks
-- `undefined`: timeout_insert - Number of timeout seconds for inserts
-- `undefined`: timeout_query - Number of timeout seconds for queries
-- `undefined`: proxy_grpc - Proxy to use for GRPC
-
-### Connection Guide
-
-### Connection Type
-
-- Input Types: `main` (general data flow)
-- Output Types: `main` (general data flow)
-- Output Count: 0 (configurable)
-
-### Can Receive From
-
-1. Webhook - via `main` connection
-2. ActiveCampaign Trigger - via `main` connection
-3. Acuity Scheduling Trigger - via `main` connection
-4. Affinity Trigger - via `main` connection
-5. Airtable Trigger - via `main` connection
-6. AMQP Trigger - via `main` connection
-7. Asana Trigger - via `main` connection
-8. Autopilot Trigger - via `main` connection
-9. AWS SNS Trigger - via `main` connection
-10. Bitbucket Trigger - via `main` connection
-
-### Can Connect To
-
-1. Code - via `main` connection
-2. Function - via `main` connection
-3. HTTP Request - via `main` connection
-4. If - via `main` connection
-5. Set - via `main` connection
-6. Merge - via `main` connection
-7. Airtable - via `main` connection
-8. Discord - via `main` connection
-9. Dropbox - via `main` connection
-10. GitHub - via `main` connection
-### JSON Configuration Examples
-
-#### Basic Configuration
-```json
-{
-  "name": "Weaviate Vector Store",
-  "type": "nodes-langchain.vectorStoreWeaviate",
-  "typeVersion": 1,
-  "position": [
-    250,
-    300
-  ],
-  "parameters": {
-    "toolName": "",
-    "toolDescription": "",
-    "prompt": "",
-    "id": "",
-    "weaviateCollection": {
-      "mode": "list",
-      "value": ""
-    }
-  }
 }
 ```
 

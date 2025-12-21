@@ -1,7 +1,7 @@
 # AI-Powered Multi-Social Media Post Automation: Google Trends & Perplexity AI 
-> 🤖 **Category**: AI & Chatbots
-> 👁️ **Views**: 41,440
-> 📅 **Created**: 5/24/2025
+> **Category**: AI & Chatbots
+> **Views**: 41,440
+> **Created**: 5/24/2025
 ## Description
 
 Overview
@@ -172,7 +172,7 @@ This workflow is triggered by Schedule Trigger, uses Choosing Topic for AI proce
 ## Author Information
 - **Name**: Gerald Denor
 - **Username**: @dominixai
-- ✓ Verified user
+- Verified user
 ## Related Links
 - [View this template on n8n.io](https://n8n.io/workflows/4352)
 ## Complete Workflow JSON

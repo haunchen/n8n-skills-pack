@@ -23,11 +23,18 @@ Invoke a function
 |---------|------|------|--------|------|
 | `function` | options | Yes | `""` | The function you want to invoke. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>. |
 | `qualifier` | string | Yes | `"$LATEST"` | Specify a version or alias to invoke a published version of the function |
+| `authentication` | options | No | `"iam"` | - |
 | `operation` | options | No | `"invoke"` | - |
 | `invocationType` | options | No | `"RequestResponse"` | Specify if the workflow should wait for the function to return the results |
 | `payload` | string | No | `""` | The JSON that you want to provide to your Lambda function as input |
 
 ### Property Details
+
+#### Authentication (`authentication`)
+
+Optional values:
+- `iam`: AWS (IAM)
+- `assumeRole`: AWS (Assume Role)
 
 #### Operation (`operation`)
 

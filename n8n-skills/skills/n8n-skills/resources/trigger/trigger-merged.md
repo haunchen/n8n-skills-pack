@@ -128,6 +128,8 @@ Handle Bitbucket events via webhooks
 | `events` | multiOptions | Yes | `[]` | The events to listen to. Choose from the list, or specify IDs using an <a href="https://docs.n8n.io/code/expressions/">expression</a>. |
 | `repository` | options | Yes | `""` | The repository of which to listen to the events. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>. |
 | `events` | multiOptions | Yes | `[]` | The events to listen to. Choose from the list, or specify IDs using an <a href="https://docs.n8n.io/code/expressions/">expression</a>. |
+| `authentication` | options | No | `"password"` | - |
+| `authentication` | options | No | `"accessToken"` | - |
 
 #### Property Details
 
@@ -136,6 +138,18 @@ Handle Bitbucket events via webhooks
 Optional values:
 - `repository`: Repository
 - `workspace`: Workspace
+
+##### Authentication (`authentication`)
+
+Optional values:
+- `password`: Password (Deprecated)
+- `accessToken`: Access Token
+
+##### Authentication (`authentication`)
+
+Optional values:
+- `password`: Password (Deprecated)
+- `accessToken`: Access Token
 
 ### Connection Guide
 
@@ -691,7 +705,7 @@ Runs the workflow when an n8n generated webchat is submitted
 | `options` | collection | No | `{}` | - |
 | `public` | boolean | No | `false` | Whether the chat should be publicly available or only accessible through the manual chat interface |
 | `initialMessages` | string | No | `"Hi there! 👋\nMy name is Nathan. How can I assist you today?"` | Default messages shown at the start of the chat, one per line |
-| `hostedChatNotice` | notice | No | `""` | - |
+| `availableInChat` | boolean | No | `false` | Whether to make the agent available in n8n Chat |
 
 #### Property Details
 
@@ -6167,7 +6181,7 @@ Optional values:
 - `leadCreated`: Lead Created - When a new lead is created
 - `leadUpdated`: Lead Updated - When an existing lead is modified
 - `opportunityCreated`: Opportunity Created - When a new opportunity is created
-- `opportunityUpdated`: Opportunity Updated - When an existing opportunity is created
+- `opportunityUpdated`: Opportunity Updated - When an existing opportunity is modified
 - `taskCreated`: Task Created - When a new task is created
 - `taskUpdated`: Task Updated - When an existing task is modified
 - `userCreated`: User Created - When a new user is created

@@ -1,7 +1,7 @@
 # Generate AI Videos with Google Veo3, Save to Google Drive and Upload to YouTube
-> 🤖 **Category**: AI & Chatbots
-> 👁️ **Views**: 155,914
-> 📅 **Created**: 6/10/2025
+> **Category**: AI & Chatbots
+> **Views**: 155,914
+> **Created**: 6/10/2025
 ## Description
 This workflow allows users to generate AI videos using Google Veo3, save them to Google Drive, generate optimized YouTube titles with GPT-4o, and automatically upload them to YouTube with Upload-Post. The entire process is triggered from a Google Sheet that acts as the central interface for input and output.
 
@@ -117,7 +117,7 @@ This workflow is triggered by When clicking ‘Test workflow’, Schedule Trigge
 ## Author Information
 - **Name**: Davide
 - **Username**: @n3witalia
-- ✓ Verified user
+- Verified user
 ## Related Links
 - [View this template on n8n.io](https://n8n.io/workflows/4846)
 ## Complete Workflow JSON

@@ -1,7 +1,7 @@
 # Gmail AI Email Manager
-> 🤖 **Category**: AI & Chatbots
-> 👁️ **Views**: 29,066
-> 📅 **Created**: 6/6/2025
+> **Category**: AI & Chatbots
+> **Views**: 29,066
+> **Created**: 6/6/2025
 ## Description
 Want to check out all my flows, follow me on:
 
@@ -132,7 +132,7 @@ This workflow is triggered by Gmail Trigger, uses Structured Output Parser, Anth
 ## Author Information
 - **Name**: Max Mitcham
 - **Username**: @maxmitcham
-- ✓ Verified user
+- Verified user
 ## Related Links
 - [View this template on n8n.io](https://n8n.io/workflows/4722)
 ## Complete Workflow JSON

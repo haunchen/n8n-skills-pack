@@ -1,7 +1,7 @@
 # Generate AI Viral Videos with Seedance and Upload to TikTok, YouTube & Instagram
-> 📱 **Category**: Social Media & Video
-> 👁️ **Views**: 214,907
-> 📅 **Created**: 6/25/2025
+> **Category**: Social Media & Video
+> **Views**: 214,907
+> **Created**: 6/25/2025
 ## Description
 
 Generate AI videos with Seedance & Blotato, upload to TikTok, YouTube & Instagram
@@ -169,7 +169,7 @@ This workflow is triggered by Trigger: Start Daily Content Generation, uses Tool
 ## Author Information
 - **Name**: Dr. Firas
 - **Username**: @drfiras
-- ✓ Verified user
+- Verified user
 ## Related Links
 - [View this template on n8n.io](https://n8n.io/workflows/5338)
 ## Complete Workflow JSON

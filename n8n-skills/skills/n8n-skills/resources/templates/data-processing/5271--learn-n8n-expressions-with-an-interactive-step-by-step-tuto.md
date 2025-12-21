@@ -1,7 +1,7 @@
 # 🎓 Learn n8n Expressions with an Interactive Step-by-Step Tutorial for Beginners
-> 📊 **Category**: Data Processing & Analysis
-> 👁️ **Views**: 27,902
-> 📅 **Created**: 6/24/2025
+> **Category**: Data Processing & Analysis
+> **Views**: 27,902
+> **Created**: 6/24/2025
 ## Description
 How it works
 
@@ -85,7 +85,7 @@ This workflow is triggered by Start Tutorial, goes through 11 transformation ste
 ## Author Information
 - **Name**: Lucas Peyrin
 - **Username**: @lucaspeyrin
-- ✓ Verified user
+- Verified user
 ## Related Links
 - [View this template on n8n.io](https://n8n.io/workflows/5271)
 ## Complete Workflow JSON

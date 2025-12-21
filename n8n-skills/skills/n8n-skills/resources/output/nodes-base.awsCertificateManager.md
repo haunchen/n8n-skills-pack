@@ -40,6 +40,7 @@ Renew a certificate
 | `certificateArn` | string | Yes | `""` | String that contains the ARN of the ACM certificate to be renewed. This must be of the form: arn:aws:acm:region:123456789012:certificate/12345678-1234-1234-1234-123456789012. |
 | `bucketName` | string | Yes | `""` | - |
 | `certificateKey` | string | Yes | `""` | - |
+| `authentication` | options | No | `"iam"` | - |
 | `resource` | options | No | `"certificate"` | - |
 | `operation` | options | No | `"renew"` | - |
 | `options` | collection | No | `{}` | - |
@@ -47,6 +48,12 @@ Renew a certificate
 | `limit` | number | No | `100` | Max number of results to return |
 
 ### Property Details
+
+#### Authentication (`authentication`)
+
+Optional values:
+- `iam`: AWS (IAM)
+- `assumeRole`: AWS (Assume Role)
 
 #### Resource (`resource`)
 

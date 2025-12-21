@@ -1,4 +1,4 @@
-# 📱 Social Media & Video
+# Social Media & Video
 
 TikTok, Instagram, YouTube automation and AI video generation
 

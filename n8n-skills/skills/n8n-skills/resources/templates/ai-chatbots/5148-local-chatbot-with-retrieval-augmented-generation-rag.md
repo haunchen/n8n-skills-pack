@@ -1,7 +1,7 @@
 # Local Chatbot with Retrieval Augmented Generation (RAG)
-> 🤖 **Category**: AI & Chatbots
-> 👁️ **Views**: 28,717
-> 📅 **Created**: 6/23/2025
+> **Category**: AI & Chatbots
+> **Views**: 28,717
+> **Created**: 6/23/2025
 ## Description
 Build a 100% local RAG with n8n, Ollama and Qdrant. This agent uses a semantic database (Qdrant) to answer questions about PDF files.
 
@@ -81,7 +81,7 @@ This workflow is triggered by On form submission, When chat message received, us
 ## Author Information
 - **Name**: Thomas Janssen
 - **Username**: @thomasjanssen-tech
-- ✓ Verified user
+- Verified user
 ## Related Links
 - [View this template on n8n.io](https://n8n.io/workflows/5148)
 ## Complete Workflow JSON

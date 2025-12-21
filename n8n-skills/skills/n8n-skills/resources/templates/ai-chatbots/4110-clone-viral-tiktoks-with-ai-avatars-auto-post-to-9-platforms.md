@@ -1,7 +1,7 @@
 # Clone Viral TikToks with AI Avatars & Auto-Post to 9 Platforms using Perplexity & Blotato
-> 🤖 **Category**: AI & Chatbots
-> 👁️ **Views**: 84,076
-> 📅 **Created**: 5/16/2025
+> **Category**: AI & Chatbots
+> **Views**: 84,076
+> **Created**: 5/16/2025
 ## Description
 
 Clone a viral TikTok with AI and auto-post it to 9 platforms using Perplexity & Blotato
@@ -165,7 +165,7 @@ This workflow is triggered by Trigger: Get TikTok URL via Telegram, uses Analyze
 ## Author Information
 - **Name**: Dr. Firas
 - **Username**: @drfiras
-- ✓ Verified user
+- Verified user
 ## Related Links
 - [View this template on n8n.io](https://n8n.io/workflows/4110)
 ## Complete Workflow JSON

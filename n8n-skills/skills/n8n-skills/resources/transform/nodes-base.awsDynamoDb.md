@@ -36,13 +36,13 @@ Get many items
 | `eavUi` | fixedCollection | Yes | `{}` | Substitution tokens for attribute names in an expression |
 | `tableName` | options | Yes | `[]` | Table to operate on. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>. |
 | `keyConditionExpression` | string | Yes | `""` | Condition to determine the items to be retrieved. The condition must perform an equality test on a single partition key value, in this format: <code>partitionKeyName = :partitionkeyval</code> |
+| `authentication` | options | No | `"iam"` | - |
 | `resource` | options | No | `"item"` | - |
 | `operation` | options | No | `"upsert"` | - |
 | `dataToSend` | options | No | `"defineBelow"` | Whether to insert the input data this node receives in the new row |
 | `returnValues` | options | No | `"NONE"` | Use ReturnValues if you want to get the item attributes as they appeared before they were deleted |
 | `keysUi` | fixedCollection | No | `{}` | Item's primary key. For example, with a simple primary key, you only need to provide a value for the partition key. For a composite primary key, you must provide values for both the partition key and the sort key. |
 | `keysUi` | fixedCollection | No | `{}` | Item's primary key. For example, with a simple primary key, you only need to provide a value for the partition key. For a composite primary key, you must provide values for both the partition key and the sort key. |
-| `fieldsUi` | fixedCollection | No | `{}` | - |
 
 ### Property Details
 
@@ -52,6 +52,12 @@ Substitution tokens for attribute names in an expression
 
 Optional values:
 - `undefined`: eavValues
+
+#### Authentication (`authentication`)
+
+Optional values:
+- `iam`: AWS (IAM)
+- `assumeRole`: AWS (Assume Role)
 
 #### Resource (`resource`)
 
@@ -95,11 +101,6 @@ Item's primary key. For example, with a simple primary key, you only need to pro
 
 Optional values:
 - `undefined`: keyValues
-
-#### Fields to Send (`fieldsUi`)
-
-Optional values:
-- `undefined`: fieldValues
 
 ## Connection Guide
 

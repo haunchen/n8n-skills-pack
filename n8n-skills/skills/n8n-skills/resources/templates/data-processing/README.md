@@ -1,4 +1,4 @@
-# 📊 Data Processing & Analysis
+# Data Processing & Analysis
 
 Google Sheets, database integration, data analysis workflows
 

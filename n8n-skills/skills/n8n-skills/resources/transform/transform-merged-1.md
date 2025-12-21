@@ -5264,10 +5264,10 @@ Return the analytics data
 | `viewId` | resourceLocator | Yes | `{"mode":"list","value":""}` | The View of Google Analytics |
 | `viewId` | options | Yes | `""` | The view from Google Analytics. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>. |
 | `userId` | string | Yes | `""` | ID of a user |
-| `startDate` | dateTime | Yes | `"2025-10-26T00:00:00.000+08:00"` | - |
-| `endDate` | dateTime | Yes | `"2025-11-02T00:00:00.000+08:00"` | - |
-| `startDate` | dateTime | Yes | `"2025-10-26T00:00:00.000+08:00"` | - |
-| `endDate` | dateTime | Yes | `"2025-11-02T00:00:00.000+08:00"` | - |
+| `startDate` | dateTime | Yes | `"2025-12-13T00:00:00.000+08:00"` | - |
+| `endDate` | dateTime | Yes | `"2025-12-20T00:00:00.000+08:00"` | - |
+| `startDate` | dateTime | Yes | `"2025-12-13T00:00:00.000+08:00"` | - |
+| `endDate` | dateTime | Yes | `"2025-12-20T00:00:00.000+08:00"` | - |
 
 #### Property Details
 
@@ -5345,8 +5345,8 @@ Optional values:
     },
     "viewId": "",
     "userId": "",
-    "startDate": "2025-10-26T00:00:00.000+08:00",
-    "endDate": "2025-11-02T00:00:00.000+08:00"
+    "startDate": "2025-12-13T00:00:00.000+08:00",
+    "endDate": "2025-12-20T00:00:00.000+08:00"
   }
 }
 ```
@@ -5369,8 +5369,8 @@ Optional values:
     },
     "viewId": "",
     "userId": "",
-    "startDate": "2025-10-26T00:00:00.000+08:00",
-    "endDate": "2025-11-02T00:00:00.000+08:00",
+    "startDate": "2025-12-13T00:00:00.000+08:00",
+    "endDate": "2025-12-20T00:00:00.000+08:00",
     "operation": "get"
   }
 }
@@ -12963,6 +12963,7 @@ Optional values:
 - `undefined`: readAsString - In some cases and file formats, it is necessary to read as string to ensure special characters are interpreted correctly
 - `undefined`: sheetName - Name of the sheet to read from in the spreadsheet (if supported). If not set, the first one will be chosen.
 - `undefined`: fromLine - Start handling records from the requested line number. Starts at 0.
+- `undefined`: skipRecordsWithErrors
 
 ##### Options (`options`)
 
@@ -13231,6 +13232,7 @@ Get a balance
 
 | Property Name | Type | Required | Default | Description |
 |---------|------|------|--------|------|
+| `value` | number | Yes | `1` | The value of the meter event. Must be an integer. Can be positive or negative. |
 | `duration` | options | Yes | `"once"` | How long the discount will be in effect |
 | `type` | options | Yes | `"percent"` | Whether the coupon discount is a percentage or a fixed amount |
 | `type` | options | Yes | `"wechat"` | Type of source (payment instrument) to create |
@@ -13240,7 +13242,6 @@ Get a balance
 | `customerId` | string | Yes | `""` | ID of the customer whose card to remove |
 | `cardId` | string | Yes | `""` | ID of the card to remove |
 | `customerId` | string | Yes | `""` | ID of the customer whose card to retrieve |
-| `sourceId` | string | Yes | `""` | ID of the source to retrieve |
 
 #### Property Details
 
@@ -13319,12 +13320,12 @@ Optional values:
     300
   ],
   "parameters": {
+    "value": 1,
     "duration": "once",
     "type": "cardToken",
     "customerId": "",
     "token": "",
-    "cardId": "",
-    "sourceId": ""
+    "cardId": ""
   }
 }
 ```
@@ -13340,12 +13341,12 @@ Optional values:
     300
   ],
   "parameters": {
+    "value": 1,
     "duration": "once",
     "type": "cardToken",
     "customerId": "",
     "token": "",
     "cardId": "",
-    "sourceId": "",
     "operation": "get"
   }
 }

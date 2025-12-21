@@ -2430,6 +2430,7 @@ Optional values:
 - `undefined`: readAsString - In some cases and file formats, it is necessary to read as string to ensure special characters are interpreted correctly
 - `undefined`: sheetName - Name of the sheet to read from in the spreadsheet
 - `undefined`: fromLine - Start handling records from the requested line number. Starts at 0.
+- `undefined`: skipRecordsWithErrors
 
 ##### Options (`options`)
 
@@ -12437,6 +12438,10 @@ Returns generic information about the Redis instance
 Returns all the keys matching a pattern
 - Value: `keys`
 
+### List Length
+Returns the length of a list
+- Value: `llen`
+
 ### Pop
 Pop data from a redis list
 - Value: `pop`
@@ -12462,11 +12467,11 @@ Set the value of a key in redis
 | `key` | string | Yes | `""` | Name of the key to get from Redis |
 | `key` | string | Yes | `""` | Name of the key to increment |
 | `keyPattern` | string | Yes | `""` | The key pattern for the keys to return |
+| `list` | string | Yes | `""` | Name of the list in Redis |
+| `list` | string | Yes | `""` | Name of the list in Redis |
 | `key` | string | Yes | `""` | Name of the key to set in Redis |
 | `channel` | string | Yes | `""` | Channel name |
 | `messageData` | string | Yes | `""` | Data to publish |
-| `list` | string | Yes | `""` | Name of the list in Redis |
-| `messageData` | string | Yes | `""` | Data to push |
 
 ### Connection Guide
 
@@ -12516,9 +12521,9 @@ Set the value of a key in redis
     "key": "",
     "propertyName": "propertyName",
     "keyPattern": "",
+    "list": "",
     "channel": "",
-    "messageData": "",
-    "list": ""
+    "messageData": ""
   }
 }
 ```
@@ -12537,9 +12542,9 @@ Set the value of a key in redis
     "key": "",
     "propertyName": "propertyName",
     "keyPattern": "",
+    "list": "",
     "channel": "",
     "messageData": "",
-    "list": "",
     "operation": "delete"
   }
 }
@@ -12559,9 +12564,9 @@ Set the value of a key in redis
     "key": "",
     "propertyName": "propertyName",
     "keyPattern": "",
+    "list": "",
     "channel": "",
     "messageData": "",
-    "list": "",
     "operation": "get"
   }
 }
@@ -12587,6 +12592,7 @@ Send a message to a chat
 |---------|------|------|--------|------|
 | `message` | string | Yes | `""` | - |
 | `options` | collection | No | `{}` | - |
+| `options` | collection | No | `{}` | - |
 | `generalNotice` | notice | No | `""` | - |
 | `waitUserReply` | boolean | No | `true` | - |
 
@@ -12596,6 +12602,11 @@ Send a message to a chat
 
 Optional values:
 - `undefined`: memoryConnection
+- `undefined`: limitWaitTime - Whether to limit the time this node should wait for a user response before execution resumes
+
+##### Options (`options`)
+
+Optional values:
 - `undefined`: limitWaitTime - Whether to limit the time this node should wait for a user response before execution resumes
 
 ### Connection Guide
@@ -13386,7 +13397,7 @@ Make your workflow easier to understand
 | `height` | number | Yes | `160` | - |
 | `width` | number | Yes | `240` | - |
 | `color` | number | Yes | `1` | - |
-| `content` | string | No | `"## I'm a note \n**Double click** to edit me. [Guide](https://docs.n8n.io/workflows/sticky-notes/)"` | - |
+| `content` | string | No | `"## I'm a note \n**Double click** to edit me. [Guide](https://docs.n8n.io/workflows/components/sticky-notes/)"` | - |
 
 ### Connection Guide
 

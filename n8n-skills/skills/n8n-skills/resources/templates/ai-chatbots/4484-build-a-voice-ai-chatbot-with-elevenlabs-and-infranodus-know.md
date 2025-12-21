@@ -1,7 +1,7 @@
 # Build a Voice AI Chatbot with ElevenLabs and InfraNodus Knowledge Experts
-> 🤖 **Category**: AI & Chatbots
-> 👁️ **Views**: 31,420
-> 📅 **Created**: 5/29/2025
+> **Category**: AI & Chatbots
+> **Views**: 31,420
+> **Created**: 5/29/2025
 ## Description
 Set Up ElevenLabs Voice Chat Agent using Graph RAG Knowledge Graphs as Experts
 
@@ -139,7 +139,7 @@ This workflow is triggered by Webhook, Respond to Webhook, uses OpenAI Model, Si
 ## Author Information
 - **Name**: InfraNodus
 - **Username**: @infranodus
-- ✓ Verified user
+- Verified user
 ## Related Links
 - [View this template on n8n.io](https://n8n.io/workflows/4484)
 ## Complete Workflow JSON

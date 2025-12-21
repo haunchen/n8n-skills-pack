@@ -278,12 +278,19 @@ Send a message to a queue
 | `queue` | options | Yes | `""` | Queue to send a message to. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>. |
 | `message` | string | Yes | `""` | Message to send to the queue |
 | `messageGroupId` | string | Yes | `""` | Tag that specifies that a message belongs to a specific message group. Applies only to FIFO (first-in-first-out) queues. |
+| `authentication` | options | No | `"iam"` | - |
 | `operation` | options | No | `"sendMessage"` | - |
 | `queueType` | options | No | `"standard"` | - |
 | `options` | collection | No | `{}` | - |
 | `sendInputData` | boolean | No | `true` | Whether to send the data the node receives as JSON to SQS |
 
 #### Property Details
+
+##### Authentication (`authentication`)
+
+Optional values:
+- `iam`: AWS (IAM)
+- `assumeRole`: AWS (Assume Role)
 
 ##### Operation (`operation`)
 
@@ -399,10 +406,17 @@ Sends data to Amazon Textract
 | Property Name | Type | Required | Default | Description |
 |---------|------|------|--------|------|
 | `binaryPropertyName` | string | Yes | `"data"` | The name of the input field containing the binary file data to be uploaded. Supported file types: PNG, JPEG. |
+| `authentication` | options | No | `"iam"` | - |
 | `operation` | options | No | `"analyzeExpense"` | - |
 | `simple` | boolean | No | `true` | Whether to return a simplified version of the response instead of the raw data |
 
 #### Property Details
+
+##### Authentication (`authentication`)
+
+Optional values:
+- `iam`: AWS (IAM)
+- `assumeRole`: AWS (Assume Role)
 
 ##### Operation (`operation`)
 
@@ -7047,13 +7061,13 @@ Connect tools from an MCP Server
 | `sseEndpoint` | string | Yes | `""` | SSE Endpoint of your MCP server |
 | `endpointUrl` | string | Yes | `""` | Endpoint of your MCP server |
 | `authentication` | options | No | `"none"` | The way to authenticate with your endpoint |
+| `authentication` | options | No | `"none"` | The way to authenticate with your endpoint |
 | `credentials` | credentials | No | `""` | - |
 | `serverTransport` | options | No | `"sse"` | The transport used by your endpoint |
 | `serverTransport` | options | No | `"httpStreamable"` | The transport used by your endpoint |
 | `include` | options | No | `"all"` | How to select the tools you want to be exposed to the AI Agent |
 | `options` | collection | No | `{}` | Additional options to add |
 | `includeTools` | multiOptions | No | `[]` | Choose from the list, or specify IDs using an <a href="https://docs.n8n.io/code/expressions/">expression</a> |
-| `excludeTools` | multiOptions | No | `[]` | Choose from the list, or specify IDs using an <a href="https://docs.n8n.io/code/expressions/">expression</a> |
 
 #### Property Details
 
@@ -7064,6 +7078,17 @@ The way to authenticate with your endpoint
 Optional values:
 - `bearerAuth`: Bearer Auth
 - `headerAuth`: Header Auth
+- `none`: None
+
+##### Authentication (`authentication`)
+
+The way to authenticate with your endpoint
+
+Optional values:
+- `bearerAuth`: Bearer Auth
+- `headerAuth`: Header Auth
+- `mcpOAuth2Api`: MCP OAuth2
+- `multipleHeadersAuth`: Multiple Headers Auth
 - `none`: None
 
 ##### Server Transport (`serverTransport`)

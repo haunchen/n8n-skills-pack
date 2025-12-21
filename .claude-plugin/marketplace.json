@@ -15,10 +15,10 @@
       }
     }
   ],
-  "version": "2.0.0",
+  "version": "2.0.1",
   "metadata": {
     "n8n_version": "1.121.0",
     "build_date": "2025-12-02T02:28:51.790Z",
-    "source_commit": "585c272"
+    "source_commit": "e956758"
   }
 }
