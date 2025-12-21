@@ -1,7 +1,7 @@
 # Generate & Auto-post AI Videos to Social Media with Veo3 and Blotato
 > 🤖 **Category**: AI & Chatbots
 > 👁️ **Views**: 71,279
-> 📅 **Created**: 6/19/2025
+> 📅 **Created**: 6/18/2025
 ## Description
 
 Automate video creation with Veo3 and auto-post to Instagram, TikTok via Blotato

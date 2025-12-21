@@ -1,7 +1,7 @@
 # AI-Powered WhatsApp Chatbot for Text, Voice, Images, and PDF with RAG
 > 🤖 **Category**: AI & Chatbots
 > 👁️ **Views**: 46,989
-> 📅 **Created**: 6/10/2025
+> 📅 **Created**: 6/9/2025
 ## Description
 Who is this for?
 This template is designed for internal support teams, product specialists, and knowledge managers in technology companies who want to automate ingestion of product documentation and enable AI-driven, retrieval-augmented question answering via WhatsApp.

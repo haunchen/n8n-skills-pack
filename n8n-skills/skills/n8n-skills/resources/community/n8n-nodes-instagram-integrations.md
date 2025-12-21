@@ -4,7 +4,7 @@
 
 - Package: `n8n-nodes-instagram-integrations`
 - Category: 🔧 Utilities & Tools
-- Version: 1.5.6
+- Version: 1.6.0
 - Maintainer: msameim181
 - npm: [View Package](https://www.npmjs.com/package/n8n-nodes-instagram-integrations)
 - Repository: [View Source](https://github.com/Msameim181/n8n-nodes-instagram-integrations)
@@ -31,37 +31,33 @@ Send messages and interact with Instagram users via Messaging API
 
 #### Available Operations
 
-- **Send Audio** (`sendAudio`)
-  Send an audio message
-- **Send Button Template** (`sendButtonTemplate`)
-  Send a message with buttons
-- **Send Generic Template** (`sendGenericTemplate`)
-  Send a carousel of cards
-- **Send Image** (`sendImage`)
-  Send an image message
-- **Send Quick Replies** (`sendQuickReplies`)
-  Send a message with quick reply options
-- **Send Text** (`sendText`)
-  Send a text message
-- **Send Video** (`sendVideo`)
-  Send a video message
-- **Upload Media** (`uploadMedia`)
-  Upload media to Instagram
+- **Delete** (`deleteComment`)
+  Delete a comment on your media
+- **Get Comments** (`getComments`)
+  Get comments on a media post
+- **Get Replies** (`getReplies`)
+  Get replies to a comment
+- **Hide/Unhide** (`toggleVisibility`)
+  Hide or unhide a comment
+- **Reply** (`replyToComment`)
+  Reply to a comment publicly
+- **Send Private Reply** (`sendPrivateReply`)
+  Send a private DM to a commenter
 
 #### Core Properties
 
 | Property | Type | Required | Default |
 |----------|------|----------|---------|
+| `hideAction` | options | Yes | `"hide"` |
 | `postMediaType` | options | Yes | `"IMAGE"` |
 | `carouselChildren` | fixedCollection | Yes | `{}` |
 | `storyMediaType` | options | Yes | `"IMAGE"` |
-| `recipientId` | string | Yes | `""` |
-| `messageText` | string | Yes | `""` |
-| `recipientId` | string | Yes | `""` |
-| `imageUrl` | string | Yes | `""` |
-| `recipientId` | string | Yes | `""` |
-| `audioUrl` | string | Yes | `""` |
-| `recipientId` | string | Yes | `""` |
+| `commentMediaId` | string | Yes | `""` |
+| `commentId` | string | Yes | `""` |
+| `commentId` | string | Yes | `""` |
+| `replyMessage` | string | Yes | `""` |
+| `commentId` | string | Yes | `""` |
+| `privateMessage` | string | Yes | `""` |
 
 #### Connection
 
@@ -80,12 +76,12 @@ Send messages and interact with Instagram users via Messaging API
     300
   ],
   "parameters": {
+    "hideAction": "hide",
     "postMediaType": "IMAGE",
     "carouselChildren": {},
     "storyMediaType": "IMAGE",
-    "recipientId": "",
-    "messageText": "",
-    "operation": "sendAudio"
+    "commentMediaId": "",
+    "operation": "deleteComment"
   }
 }
 ```

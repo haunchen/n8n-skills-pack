@@ -1,7 +1,7 @@
 # Generate AI Viral Videos with Seedance and Upload to TikTok, YouTube & Instagram
 > 📱 **Category**: Social Media & Video
 > 👁️ **Views**: 214,907
-> 📅 **Created**: 6/26/2025
+> 📅 **Created**: 6/25/2025
 ## Description
 
 Generate AI videos with Seedance & Blotato, upload to TikTok, YouTube & Instagram

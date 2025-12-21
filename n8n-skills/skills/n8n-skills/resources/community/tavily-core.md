@@ -4,7 +4,7 @@
 
 - Package: `@tavily/core`
 - Category: 🔧 Utilities & Tools
-- Version: 0.5.13
+- Version: 0.5.14
 - Maintainer: michael_griff
 - npm: [View Package](https://www.npmjs.com/package/@tavily/core)
 - Repository: [View Source](https://github.com/tavily-ai/tavily-js)

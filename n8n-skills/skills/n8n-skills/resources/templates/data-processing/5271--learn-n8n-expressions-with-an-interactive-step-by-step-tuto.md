@@ -1,7 +1,7 @@
 # 🎓 Learn n8n Expressions with an Interactive Step-by-Step Tutorial for Beginners
 > 📊 **Category**: Data Processing & Analysis
 > 👁️ **Views**: 27,902
-> 📅 **Created**: 6/25/2025
+> 📅 **Created**: 6/24/2025
 ## Description
 How it works
 

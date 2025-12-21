@@ -646,35 +646,35 @@ Popular community-developed node packages (30 packages).
 | Package Name | Category | File Path | Description |
 |--------------|----------|-----------|-------------|
 | n8n-nodes-evolution-api | Communication | community/n8n-nodes-evolution-api.md | A Evolution API é um hub de canais com foco no Wha |
+| n8n-nodes-kommo | Utilities | community/n8n-nodes-kommo.md | n8n node for Kommo Api |
 | n8n-nodes-mcp | AI Tools | community/n8n-nodes-mcp.md | MCP nodes for n8n  |
 | n8n-nodes-elevenlabs | AI Tools | community/n8n-nodes-elevenlabs.md | Complete implementation of ElevenLabs AI voice gen |
-| n8n-nodes-kommo | Utilities | community/n8n-nodes-kommo.md | n8n node for Kommo Api |
 | n8n-nodes-pdfkit | Document | community/n8n-nodes-pdfkit.md | Node for using PDFKit to tranform images into PDF, |
-| n8n-nodes-zohozeptomail | AI Tools | community/n8n-nodes-zohozeptomail.md | This is an n8n community node. It lets you use Zoh |
-| n8n-nodes-powerbi | Utilities | community/n8n-nodes-powerbi.md | n8n nodes for integration with Power BI APIs |
 | n8n-nodes-chatwoot | Communication | community/n8n-nodes-chatwoot.md | This is an n8n community node. It lets you use Cha |
-| n8n-nodes-notificame-hub | Communication | community/n8n-nodes-notificame-hub.md | A NotificaMe Hub automatiza a comunicação em múlti |
 | @elevenlabs/n8n-nodes-elevenlabs | AI Tools | community/elevenlabs-n8n-nodes-elevenlabs.md | Official ElevenLabs node for n8n |
-| @watzon/n8n-nodes-perplexity | AI Tools | community/watzon-n8n-nodes-perplexity.md | n8n node to interact with the Perplexity AI API |
 | n8n-nodes-globals | Utilities | community/n8n-nodes-globals.md | N8N community node that allows users to create glo |
-| n8n-nodes-text-manipulation | Data Processing | community/n8n-nodes-text-manipulation.md | This node allows to modify texts. |
+| n8n-nodes-powerbi | Utilities | community/n8n-nodes-powerbi.md | n8n nodes for integration with Power BI APIs |
 | n8n-nodes-evolution-api-media-downloader | Communication | community/n8n-nodes-evolution-api-media-downloader.md | Download Media from Evolution API data message |
-| @reportei/n8n-nodes-reportei | Utilities | community/reportei-n8n-nodes-reportei.md | n8n nodes for integrating with Reportei |
-| @tavily/core | Utilities | community/tavily-core.md | Official JavaScript library for Tavily. |
-| @apify/n8n-nodes-apify | Utilities | community/apify-n8n-nodes-apify.md | n8n nodes for Apify |
-| n8n-nodes-cronlytic | Utilities | community/n8n-nodes-cronlytic.md | n8n community node for Cronlytic advanced cron sch |
+| n8n-nodes-text-manipulation | Data Processing | community/n8n-nodes-text-manipulation.md | This node allows to modify texts. |
 | n8n-nodes-datastore | Data Processing | community/n8n-nodes-datastore.md | Datastore for n8n within the workflow |
+| @apify/n8n-nodes-apify | Utilities | community/apify-n8n-nodes-apify.md | n8n nodes for Apify |
 | @mendable/n8n-nodes-firecrawl | Web Scraping | community/mendable-n8n-nodes-firecrawl.md | Firecrawl node for n8n |
-| n8n-nodes-tavily | AI Tools | community/n8n-nodes-tavily.md | Tavily is a search engine tailored for AI agents,  |
+| n8n-nodes-zohozeptomail | AI Tools | community/n8n-nodes-zohozeptomail.md | This is an n8n community node. It lets you use Zoh |
+| @tavily/core | Utilities | community/tavily-core.md | Official JavaScript library for Tavily. |
+| n8n-nodes-cronlytic | Utilities | community/n8n-nodes-cronlytic.md | n8n community node for Cronlytic advanced cron sch |
 | @splainez/n8n-nodes-phonenumber-parser | AI Tools | community/splainez-n8n-nodes-phonenumber-parser.md | Parse a phone number and return its information |
 | n8n-nodes-serpapi | Web Scraping | community/n8n-nodes-serpapi.md | Official n8n node for SerpApi |
 | n8n-nodes-n8ntools-uazapi | Communication | community/n8n-nodes-n8ntools-uazapi.md | N8N Tools - Uazapi: Complete Uazapi integration -  |
-| n8n-nodes-mtai-zalo-test-trial | AI Tools | community/n8n-nodes-mtai-zalo-test-trial.md | Các node hỗ trợ Zalo cho n8n |
+| @reportei/n8n-nodes-reportei | Utilities | community/reportei-n8n-nodes-reportei.md | n8n nodes for integrating with Reportei |
+| @devlikeapro/n8n-nodes-chatwoot | Communication | community/devlikeapro-n8n-nodes-chatwoot.md | n8n node to connect with ChatWoot |
 | n8n-nodes-instagram-integrations | Utilities | community/n8n-nodes-instagram-integrations.md | N8N nodes for Instagram API integration with OAuth |
 | n8n-nodes-megaapi | Communication | community/n8n-nodes-megaapi.md | N8N Community Node for MegaAPI WhatsApp automation |
-| @devlikeapro/n8n-nodes-chatwoot | Communication | community/devlikeapro-n8n-nodes-chatwoot.md | n8n node to connect with ChatWoot |
-| n8n-nodes-pdforge | AI Tools | community/n8n-nodes-pdforge.md | pdf noodle (previously pdforge) automates PDF Gene |
+| n8n-nodes-tavily | AI Tools | community/n8n-nodes-tavily.md | Tavily is a search engine tailored for AI agents,  |
+| @watzon/n8n-nodes-perplexity | AI Tools | community/watzon-n8n-nodes-perplexity.md | n8n node to interact with the Perplexity AI API |
 | @brave/n8n-nodes-brave-search | Web Scraping | community/brave-n8n-nodes-brave-search.md | A n8n node for the Brave Search API |
+| n8n-nodes-youtube-transcription-kasha | Utilities | community/n8n-nodes-youtube-transcription-kasha.md | A custom n8n node for fetching YouTube video trans |
+| @tavily/n8n-nodes-tavily | Web Scraping | community/tavily-n8n-nodes-tavily.md | A community node for n8n to integrate Tavily API f |
+| n8n-nodes-pdforge | AI Tools | community/n8n-nodes-pdforge.md | pdf noodle (previously pdforge) automates PDF Gene |
 
 For detailed information, see [community/README.md](community/README.md).
 
@@ -710,4 +710,4 @@ For detailed template lists, please refer to the README.md file in each subdirec
 - Organization Nodes: 4 nodes (high-priority: 0, other: 4)
 - Miscellaneous Nodes: 1 nodes (high-priority: 0, other: 1)
 
-- Last updated: 2025-12-02
+- Last updated: 2025-12-21

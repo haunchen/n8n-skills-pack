@@ -4,10 +4,10 @@
 
 - Package: `n8n-nodes-pdforge`
 - Category: 🤖 AI & Voice Tools
-- Version: 2.3.2
+- Version: 2.3.3
 - Maintainer: mabreum
 - npm: [View Package](https://www.npmjs.com/package/n8n-nodes-pdforge)
-- Repository: [View Source](https://github.com/pdforge/n8n-nodes-pdforge)
+- Repository: [View Source](https://github.com/pdfnoodle/n8n-nodes-pdforge)
 
 ## Description
 
