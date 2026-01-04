@@ -4,7 +4,7 @@ description: "n8n workflow automation knowledge base. Provides n8n node informat
 license: MIT
 metadata:
   author: Frank Chen
-  version: "2.1.1"
+  version: "2.1.2"
 ---
 
 # n8n Workflow Automation Skill Pack

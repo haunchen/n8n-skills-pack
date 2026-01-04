@@ -33,7 +33,7 @@ n8n workflow automation knowledge base for AI assistants.
 
 | Item | Version |
 |------|---------|
-| Skill Pack | 2.1.1 |
+| Skill Pack | 2.1.2 |
 | n8n | 1.121.0 |
 | Last Updated | 2025-12-02 |
 

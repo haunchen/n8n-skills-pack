@@ -4,8 +4,8 @@
 
 - Package: `n8n-nodes-mcp`
 - Category: 🤖 AI & Voice Tools
-- Version: 0.1.33
-- Maintainer: iamfiscus
+- Version: 0.1.37
+- Maintainer: GitHub Actions
 - npm: [View Package](https://www.npmjs.com/package/n8n-nodes-mcp)
 - Repository: [View Source](https://github.com/nerding-io/n8n-nodes-mcp)
 
@@ -57,6 +57,7 @@ Use MCP client
 | `promptName` | string | Yes | `""` |
 | `connectionType` | options | No | `"cmd"` |
 | `uriOverride` | string | No | `""` |
+| `headersOverride` | string | No | `""` |
 
 #### Connection
 

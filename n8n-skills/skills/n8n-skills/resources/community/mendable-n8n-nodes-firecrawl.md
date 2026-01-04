@@ -3,15 +3,15 @@
 ## Basic Information
 
 - Package: `@mendable/n8n-nodes-firecrawl`
-- Category: 🕷️ Web Scraping & Browser Automation
-- Version: 1.0.6
+- Category: 🤖 AI & Voice Tools
+- Version: 2.0.0
 - Maintainer: hello_sideguide
 - npm: [View Package](https://www.npmjs.com/package/@mendable/n8n-nodes-firecrawl)
 - Repository: [View Source](https://github.com/mendableai/n8n-nodes-firecrawl)
 
 ## Description
 
-Firecrawl node for n8n
+Official Firecrawl nodes for n8n - scrape, crawl, map, search, and extract data from websites. Supports AI Agent tool usage.
 
 ## Installation
 
@@ -27,36 +27,30 @@ Firecrawl node for n8n
 - Version: 1
 - Requires Credentials: Yes
 
-Get data from Firecrawl API
+Scrape, crawl, map, search, and extract structured data from websites using Firecrawl API
 
 #### Available Operations
 
-- **Search and optionally scrape search results** (`search`)
-- **Map a website and get urls** (`map`)
-- **Scrape a url and get its content** (`scrape`)
-- **Crawl a website** (`crawl`)
-- **Batch scrape multiple URLs** (`batchScrape`)
+- **Scrape a URL and get its content as markdown, summary, or other formats** (`scrape`)
+- **Batch scrape multiple URLs simultaneously** (`batchScrape`)
 - **Get batch scrape status** (`batchScrapeStatus`)
 - **Get batch scrape errors** (`batchScrapeErrors`)
-- **List active crawls** (`crawlActive`)
-- **Preview crawl params from prompt** (`crawlParamsPreview`)
-- **Cancel a crawl job** (`cancelCrawl`)
-- ... and 10 more operations
+- **Cancel batch scrape job** (`cancelBatchScrape`)
 
 #### Core Properties
 
 | Property | Type | Required | Default |
 |----------|------|----------|---------|
+| `url` | string | Yes | `"https://firecrawl.dev"` |
+| `url` | string | Yes | `"https://firecrawl.dev"` |
+| `url` | string | Yes | `"https://firecrawl.dev"` |
+| `url` | string | Yes | `"https://firecrawl.dev"` |
 | `query` | string | Yes | `""` |
+| `urls` | string | Yes | `""` |
 | `batchId` | string | Yes | `""` |
 | `batchId` | string | Yes | `""` |
-| `prompt` | string | Yes | `""` |
-| `crawlId` | string | Yes | `""` |
-| `crawlId` | string | Yes | `""` |
 | `batchId` | string | Yes | `""` |
 | `crawlId` | string | Yes | `""` |
-| `extractId` | string | Yes | `""` |
-| `resource` | hidden | No | `"Default"` |
 
 #### Connection
 
@@ -75,11 +69,9 @@ Get data from Firecrawl API
     300
   ],
   "parameters": {
+    "url": "https://firecrawl.dev",
     "query": "",
-    "batchId": "",
-    "prompt": "",
-    "crawlId": "",
-    "operation": "search"
+    "operation": "scrape"
   }
 }
 ```
