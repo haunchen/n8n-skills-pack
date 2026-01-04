@@ -713,4 +713,4 @@ For detailed template lists, please refer to the README.md file in each subdirec
 - Organization Nodes: 4 nodes (high-priority: 0, other: 4)
 - Miscellaneous Nodes: 1 nodes (high-priority: 0, other: 1)
 
-- Last updated: 2025-12-30
+- Last updated: 2026-01-04
