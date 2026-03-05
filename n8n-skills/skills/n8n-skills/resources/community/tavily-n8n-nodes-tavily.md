@@ -4,8 +4,8 @@
 
 - Package: `@tavily/n8n-nodes-tavily`
 - Category: 🕷️ Web Scraping & Browser Automation
-- Version: 0.4.0
-- Maintainer: guyhartstein
+- Version: 0.5.1
+- Maintainer: mayramati
 - npm: [View Package](https://www.npmjs.com/package/@tavily/n8n-nodes-tavily)
 - Repository: [View Source](https://github.com/tavily-ai/tavily-n8n-node)
 
@@ -42,12 +42,12 @@ Tavily API
 | `url` | string | Yes | `""` |
 | `url` | string | Yes | `""` |
 | `urls` | string | Yes | `[]` |
+| `input` | string | Yes | `""` |
+| `requestId` | string | Yes | `""` |
 | `resource` | options | No | `"search"` |
 | `operation` | options | No | `"urls"` |
 | `operation` | options | No | `"query"` |
 | `operation` | options | No | `"url"` |
-| `operation` | options | No | `"url"` |
-| `options` | collection | No | `{}` |
 
 #### Connection
 
@@ -69,6 +69,7 @@ Tavily API
     "query": "",
     "url": "",
     "urls": [],
+    "input": "",
     "operation": "urls"
   }
 }

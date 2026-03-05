@@ -4,7 +4,7 @@
 
 - Package: `n8n-nodes-puppeteer`
 - Category: 🕷️ Web Scraping & Browser Automation
-- Version: 1.4.1
+- Version: 1.5.0
 - Maintainer: drudge
 - npm: [View Package](https://www.npmjs.com/package/n8n-nodes-puppeteer)
 - Repository: [View Source](https://github.com/drudge/n8n-nodes-puppeteer)

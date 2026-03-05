@@ -1,12 +1,12 @@
-# @devlikeapro/n8n-nodes-waha
+# n8n-nodes-waha
 
 ## Basic Information
 
-- Package: `@devlikeapro/n8n-nodes-waha`
+- Package: `n8n-nodes-waha`
 - Category: 💬 Communication & Messaging
-- Version: 2025.2.9
-- Maintainer: devlikeapro
-- npm: [View Package](https://www.npmjs.com/package/@devlikeapro/n8n-nodes-waha)
+- Version: 2024.11.5
+- Maintainer: morning-bird
+- npm: [View Package](https://www.npmjs.com/package/n8n-nodes-waha)
 - Repository: [View Source](https://github.com/devlikeapro/n8n-nodes-waha)
 
 ## Description
@@ -16,15 +16,15 @@ n8n to connect with WAHA (Whatsapp HTTP API)
 ## Installation
 
 ```
-@devlikeapro/n8n-nodes-waha
+n8n-nodes-waha
 ```
 
 ## Nodes (2)
 
 ### WAHA
 
-- Node Type: `@devlikeapro/n8n-nodes-waha.WAHA`
-- Version: 202502
+- Node Type: `n8n-nodes-waha.WAHA`
+- Version: 202411
 - Requires Credentials: Yes
 
 Connect with Whatsapp HTTP API
@@ -35,6 +35,12 @@ Connect with Whatsapp HTTP API
   Get QR code for pairing WhatsApp API.
 - **Request Code** (`Request Code`)
   Request authentication code.
+- **Authorize Code** (`Authorize Code`)
+  Send OTP authentication code.
+- **Get Captcha** (`Get Captcha`)
+  Get captcha image.
+- **Save Captcha** (`Save Captcha`)
+  Enter captcha code.
 
 #### Core Properties
 
@@ -61,8 +67,8 @@ Connect with Whatsapp HTTP API
 ```json
 {
   "name": "WAHA",
-  "type": "@devlikeapro/n8n-nodes-waha.WAHA",
-  "typeVersion": 202502,
+  "type": "n8n-nodes-waha.WAHA",
+  "typeVersion": 202411,
   "position": [
     250,
     300
@@ -81,8 +87,8 @@ Connect with Whatsapp HTTP API
 
 ### WAHA Trigger
 
-- Node Type: `@devlikeapro/n8n-nodes-waha.wahaTrigger`
-- Version: 202502
+- Node Type: `n8n-nodes-waha.wahaTrigger`
+- Version: 202411
 
 Handle WAHA events via webhooks
 
@@ -97,15 +103,15 @@ Handle WAHA events via webhooks
 
 - Input Types: 
 - Output Types: `main`
-- Output Count: 26
+- Output Count: 22
 
 #### Example Configuration
 
 ```json
 {
   "name": "WAHA Trigger",
-  "type": "@devlikeapro/n8n-nodes-waha.wahaTrigger",
-  "typeVersion": 202502,
+  "type": "n8n-nodes-waha.wahaTrigger",
+  "typeVersion": 202411,
   "position": [
     250,
     300

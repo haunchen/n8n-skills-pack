@@ -4,8 +4,8 @@
 
 - Package: `@apify/n8n-nodes-apify`
 - Category: 🔧 Utilities & Tools
-- Version: 0.6.4
-- Maintainer: apify-service-account
+- Version: 0.6.5
+- Maintainer: GitHub Actions
 - npm: [View Package](https://www.npmjs.com/package/@apify/n8n-nodes-apify)
 - Repository: [View Source](https://github.com/apify/n8n-nodes-apify)
 

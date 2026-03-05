@@ -4,7 +4,7 @@
 
 - Package: `@mendable/n8n-nodes-firecrawl`
 - Category: 🤖 AI & Voice Tools
-- Version: 2.0.0
+- Version: 2.0.4
 - Maintainer: hello_sideguide
 - npm: [View Package](https://www.npmjs.com/package/@mendable/n8n-nodes-firecrawl)
 - Repository: [View Source](https://github.com/mendableai/n8n-nodes-firecrawl)
@@ -31,7 +31,7 @@ Scrape, crawl, map, search, and extract structured data from websites using Fire
 
 #### Available Operations
 
-- **Scrape a URL and get its content as markdown, summary, or other formats** (`scrape`)
+- **Scrape a URL and get content as markdown or other formats** (`scrape`)
 - **Batch scrape multiple URLs simultaneously** (`batchScrape`)
 - **Get batch scrape status** (`batchScrapeStatus`)
 - **Get batch scrape errors** (`batchScrapeErrors`)
