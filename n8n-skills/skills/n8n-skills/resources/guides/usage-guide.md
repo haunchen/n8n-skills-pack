@@ -235,19 +235,45 @@ Decision flow:
 
 ### Common Pitfalls
 
-1. Don't always read complete merged files
-   - Merged files can have thousands of lines
-   - Should use INDEX.md to find line numbers, then read precisely
+| Mistake | Impact | Solution |
+|---------|--------|----------|
+| Reading entire merged files | Wastes tokens, slow response | Use INDEX.md to find line numbers, use offset/limit |
+| Confusing Trigger and Action nodes | Invalid workflow structure | Triggers only at workflow start, Actions anywhere else |
+| Ignoring node compatibility | Connection errors at runtime | Check compatibility-matrix.md before connecting |
+| Wrong node naming format | File not found errors | Use `nodes-base.{nodeType}.md`, nodeType is camelCase |
+| Skipping node version check | Using deprecated features | Check version info in node documentation |
+| Not checking authentication requirements | Auth errors at runtime | Check "Credentials" section in node docs |
+| Assuming all nodes have individual files | Reading wrong content | Only top 50 nodes have individual files, others are merged |
+| Ignoring input/output types | Data format mismatches | Check "Connection Guide" section for data types |
 
-2. Pay attention to node naming format
-   - File format: `nodes-base.{nodeType}.md`
-   - nodeType is usually lowercase with hyphens
-   - Example: `nodes-base.httpRequest.md` (not `http-request`)
+## 5. Multi-Environment Usage
 
-3. Distinguish between trigger and action nodes
-   - Triggers can only be placed at the beginning of workflows
-   - Webhook nodes are also a type of trigger
+This skill works across different Claude environments:
 
-4. Check node versions
-   - Some nodes have multiple versions
-   - Documentation will note version numbers and differences
+### Claude Code (CLI)
+
+- Full file system access via Read, Glob, Grep tools
+- Use offset/limit for precise reading of merged files
+- Most efficient for large-scale node searches
+- Example: `Read("resources/INDEX.md", offset=50, limit=100)`
+
+### Claude.ai Web
+
+- No direct file system access
+- Request node information conversationally
+- Claude references skill knowledge to answer
+- Example: "Tell me about the HTTP Request node configuration"
+
+### Claude Desktop (with MCP)
+
+- File access depends on MCP server configuration
+- If filesystem MCP enabled: same capabilities as Claude Code
+- Otherwise: same as Claude.ai Web
+
+### Usage Recommendations by Environment
+
+| Environment | Recommended Approach |
+|-------------|---------------------|
+| Claude Code | Use tools directly for file reading, most efficient |
+| Claude.ai Web | Describe your needs, let Claude answer from knowledge |
+| Claude Desktop | Check MCP config first, then choose appropriate method |

@@ -1,6 +1,36 @@
 # How to Find Nodes
 
-This skill contains complete information for 542 n8n nodes. As an AI assistant, you can use the following tools to efficiently find and read node information.
+This skill contains complete information for n8n nodes. As an AI assistant, you can use the following tools to efficiently find and read node information.
+
+## Quick Decision Flowchart
+
+Use this flowchart to decide which tool to use:
+
+```dot
+digraph find_nodes {
+    rankdir=TB;
+    node [shape=diamond];
+
+    start [label="What info do you have?" shape=ellipse];
+    q1 [label="Know exact\nnode name?"];
+    q2 [label="Know what\nit does?"];
+    q3 [label="Know the\ncategory?"];
+
+    node [shape=box];
+    a1 [label="Glob: resources/**/*{name}*.md"];
+    a2 [label="Grep: search by keywords"];
+    a3 [label="Read: category README"];
+    a4 [label="Read: INDEX.md"];
+
+    start -> q1;
+    q1 -> a1 [label="yes"];
+    q1 -> q2 [label="no"];
+    q2 -> a2 [label="yes"];
+    q2 -> q3 [label="no"];
+    q3 -> a3 [label="yes"];
+    q3 -> a4 [label="no"];
+}
+```
 
 ## 1. Using the Unified Index (INDEX.md)
 

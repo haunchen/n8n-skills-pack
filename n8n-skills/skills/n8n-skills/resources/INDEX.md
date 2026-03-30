@@ -24,10 +24,30 @@ Read("resources/transform/transform-merged-1.md", offset=110, limit=64)
 
 ## Quick Navigation
 
+- [Quick Task Reference](#quick-task-reference)
 - [Find by Category](#find-by-category)
 - [Community Packages](#community-packages)
 - [Template Index](#template-index)
 - [Statistics](#statistics)
+
+---
+
+## Quick Task Reference
+
+Find the right node for common tasks:
+
+| Task | Recommended Node | File Location |
+|------|------------------|---------------|
+| Send HTTP requests | HTTP Request | input/nodes-base.httpRequest.md |
+| Conditional branching | IF | transform/nodes-base.if.md |
+| Merge multiple data streams | Merge | transform/nodes-base.merge.md |
+| Execute custom code | Code | transform/nodes-base.code.md |
+| Send emails | Gmail | output/nodes-base.gmail.md |
+| Receive webhooks | Webhook | trigger/nodes-base.webhook.md |
+| Schedule workflows | Schedule Trigger | trigger/nodes-base.scheduleTrigger.md |
+| AI conversation handling | AI Agent | transform/transform-merged-2.md (see INDEX for line) |
+| Read/write Google Sheets | Google Sheets | output/nodes-base.googleSheets.md |
+| Transform data format | Set | transform/nodes-base.set.md |
 
 ---
 
@@ -713,4 +733,4 @@ For detailed template lists, please refer to the README.md file in each subdirec
 - Organization Nodes: 4 nodes (high-priority: 0, other: 4)
 - Miscellaneous Nodes: 1 nodes (high-priority: 0, other: 1)
 
-- Last updated: 2026-03-11
+- Last updated: 2026-03-30

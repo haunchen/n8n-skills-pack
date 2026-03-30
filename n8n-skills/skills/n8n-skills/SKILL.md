@@ -1,6 +1,6 @@
 ---
 name: n8n-skills
-description: "n8n workflow automation knowledge base. Provides n8n node information, node functionality details, workflow patterns, and configuration examples. Covers triggers, data transformation, data input/output, AI integration, covering 10 nodes. Keywords: n8n, workflow, automation, node, trigger, webhook, http request, database, ai agent."
+description: "Use when building or troubleshooting n8n workflows. Covers node discovery, configuration details, connection compatibility, and workflow patterns. Keywords: n8n, workflow, automation, node, trigger, webhook, http request, database, ai agent."
 license: MIT
 metadata:
   author: Frank Chen
@@ -25,99 +25,74 @@ This skill includes:
 - Common workflow patterns
 - Node categorization and indexing for both built-in and community nodes
 
-## Table of Contents
+## When to Use
 
-- [Overview](#overview)
-- [Common Workflow Patterns](#common-workflow-patterns)
-- [How to Find Nodes](resources/guides/how-to-find-nodes.md)
-- [Usage Guide](resources/guides/usage-guide.md)
-- [License and Attribution](#license-and-attribution)
+Use this skill when:
+- Building or designing n8n workflows
+- Searching for nodes that match specific functionality
+- Troubleshooting node configurations or connections
+- Understanding node input/output compatibility
+- Exploring community packages for extended functionality
 
-# Common Workflow Patterns
+Do NOT use when:
+- Learning general automation concepts (use n8n official docs)
+- Deploying or hosting n8n (infrastructure questions)
+- Pricing or licensing questions (contact n8n directly)
 
-Here are some common workflow patterns you can use as a starting point:
+## Quick Navigation
 
-## 1. HTTP Data Fetching
+Use this flowchart to find the right resource:
 
-Fetch data from APIs and process it
+```dot
+digraph navigation {
+    rankdir=TB;
+    node [shape=diamond];
 
-Nodes used:
-- HTTP Request
-- Set
-- IF
+    start [label="What do you need?" shape=ellipse];
+    q1 [label="Know the\nnode name?"];
+    q2 [label="Know the\nfunctionality?"];
+    q3 [label="Need\nexamples?"];
 
-Example: Use HTTP Request node to fetch data from external APIs, Set node to transform formats, and IF node for conditional logic
+    node [shape=box];
+    a1 [label="Glob: resources/**/*{name}*.md"];
+    a2 [label="Grep: search keywords\nin resources/"];
+    a3 [label="Read: resources/templates/"];
+    a4 [label="Read: INDEX.md\nby category"];
 
-## 2. Email Automation
+    start -> q1;
+    q1 -> a1 [label="yes"];
+    q1 -> q2 [label="no"];
+    q2 -> a2 [label="yes"];
+    q2 -> q3 [label="no"];
+    q3 -> a3 [label="yes"];
+    q3 -> a4 [label="no"];
+}
+```
 
-Monitor emails and auto-respond or forward
+### Quick Links
 
-Nodes used:
-- Email Trigger (IMAP)
-- Gmail
-- IF
+- [Complete Node Index](resources/INDEX.md) - All nodes with line numbers
+- [How to Find Nodes](resources/guides/how-to-find-nodes.md) - Search strategies
+- [Usage Guide](resources/guides/usage-guide.md) - Detailed instructions
+- [Workflow Patterns](resources/guides/workflow-patterns.md) - Common patterns
 
-Example: Use Email Trigger to monitor inbox, IF node to filter specific conditions, and Gmail node to auto-reply or forward
+## Common Mistakes
 
-## 3. Database Synchronization
+| Mistake | Solution |
+|---------|----------|
+| Reading entire merged files (thousands of lines) | Use INDEX.md to find line numbers, then use offset/limit for precise reading |
+| Confusing Trigger and Action nodes | Triggers can only be placed at workflow start, Actions can be anywhere |
+| Ignoring node compatibility | Check compatibility-matrix.md to verify node connections |
+| Using wrong node naming format | File format is `nodes-base.{nodeType}.md`, nodeType is usually camelCase |
 
-Sync data between different systems
+See [Usage Guide](resources/guides/usage-guide.md#common-pitfalls) for more details.
 
-Nodes used:
-- Schedule Trigger
-- HTTP Request
-- Postgres
-- MySQL
+## Resources
 
-Example: Scheduled trigger to read data from one database, transform it, and write to another database
-
-## 4. Webhook Processing
-
-Receive external webhooks and trigger actions
-
-Nodes used:
-- Webhook
-- Set
-- HTTP Request
-- Slack
-
-Example: Receive webhook events, process data, and send notifications to Slack or other systems
-
-## 5. AI Assistant Integration
-
-Use AI models to process and generate content
-
-Nodes used:
-- AI Agent
-- OpenAI
-- Vector Store
-- Embeddings OpenAI
-
-Example: Build AI assistants to handle user queries, integrate vector databases for semantic search
-
-## 6. File Processing
-
-Automatically process and transform files
-
-Nodes used:
-- Google Drive Trigger
-- Extract from File
-- Move Binary Data
-- Dropbox
-
-Example: Monitor Google Drive for new files, extract and process content, then upload to Dropbox
-
-## Complete Template Library
-
-We have collected 20 popular workflow templates from n8n.io, categorized by use case:
-
-- [AI & Chatbots](resources/templates/ai-chatbots/README.md) - AI Agents, RAG systems, intelligent conversations
-- [Social Media & Video](resources/templates/social-media/README.md) - TikTok, Instagram, YouTube automation
-- [Data Processing & Analysis](resources/templates/data-processing/README.md) - Google Sheets, database integration
-- [Communication & Collaboration](resources/templates/communication/README.md) - Email, WhatsApp, Telegram automation
-
-See the [complete template index](resources/templates/README.md) for all available templates.
-
+- [Workflow Patterns](resources/guides/workflow-patterns.md) - 6 common workflow patterns
+- [Template Library](resources/templates/README.md) - 20 popular templates
+- [Node Index](resources/INDEX.md) - Complete node reference
+- [Compatibility Matrix](resources/compatibility-matrix.md) - Node connection rules
 
 ---
 
