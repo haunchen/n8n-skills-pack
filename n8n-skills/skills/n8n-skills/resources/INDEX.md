@@ -669,35 +669,35 @@ Popular community-developed node packages (30 packages).
 | Package Name | Category | File Path | Description |
 |--------------|----------|-----------|-------------|
 | n8n-nodes-evolution-api | Communication | community/n8n-nodes-evolution-api.md | A Evolution API é um hub de canais com foco no Wha |
-| n8n-nodes-kommo | Utilities | community/n8n-nodes-kommo.md | n8n node for Kommo Api |
-| n8n-nodes-palatine-speech | AI Tools | community/n8n-nodes-palatine-speech.md | Official n8n node for Palatine Speech API: transcr |
-| n8n-nodes-waha | Communication | community/n8n-nodes-waha.md | n8n to connect with WAHA (Whatsapp HTTP API) |
-| n8n-nodes-serpapi | Web Scraping | community/n8n-nodes-serpapi.md | Official n8n node for SerpApi |
-| n8n-nodes-pdfco | Document | community/n8n-nodes-pdfco.md | Pdf.co nodes for n8n |
 | n8n-nodes-globals | Utilities | community/n8n-nodes-globals.md | N8N community node that allows users to create glo |
+| n8n-nodes-palatine-speech | AI Tools | community/n8n-nodes-palatine-speech.md | Official n8n node for Palatine Speech API: transcr |
+| @devlikeapro/n8n-nodes-chatwoot | Communication | community/devlikeapro-n8n-nodes-chatwoot.md | n8n node to connect with ChatWoot |
+| n8n-nodes-kommo | Utilities | community/n8n-nodes-kommo.md | n8n node for Kommo Api |
 | n8n-nodes-chatwoot | Communication | community/n8n-nodes-chatwoot.md | This is an n8n community node. It lets you use Cha |
-| @gotohuman/n8n-nodes-gotohuman | AI Tools | community/gotohuman-n8n-nodes-gotohuman.md | n8n node to request human reviews in AI workflows  |
-| @tavily/n8n-nodes-tavily | Web Scraping | community/tavily-n8n-nodes-tavily.md | A community node for n8n to integrate Tavily API f |
-| @mookielianhd/n8n-nodes-instagram | Utilities | community/mookielianhd-n8n-nodes-instagram.md | Instagram node for n8n |
-| @elevenlabs/n8n-nodes-elevenlabs | AI Tools | community/elevenlabs-n8n-nodes-elevenlabs.md | Official ElevenLabs node for n8n |
-| n8n-nodes-kipps | AI Tools | community/n8n-nodes-kipps.md | Custom Kipps.ai integration node for n8n |
-| n8n-nodes-cronlytic | Utilities | community/n8n-nodes-cronlytic.md | n8n community node for Cronlytic advanced cron sch |
-| n8n-nodes-a2a | Document | community/n8n-nodes-a2a.md | n8n community node for A2A (Account to Account) tr |
+| n8n-nodes-puppeteer | Web Scraping | community/n8n-nodes-puppeteer.md | n8n node for browser automation using Puppeteer |
+| @apify/n8n-nodes-apify | Utilities | community/apify-n8n-nodes-apify.md | n8n nodes for Apify |
+| n8n-nodes-cloudinary | Data Processing | community/n8n-nodes-cloudinary.md | The official Cloudinary n8n node - upload media, u |
+| n8n-nodes-pdfco | Document | community/n8n-nodes-pdfco.md | Pdf.co nodes for n8n |
 | n8n-nodes-rd-station-crm | Utilities | community/n8n-nodes-rd-station-crm.md | Nós personalizados do n8n para integração com a AP |
 | n8n-nodes-mcp | AI Tools | community/n8n-nodes-mcp.md | MCP nodes for n8n  |
-| @devlikeapro/n8n-nodes-chatwoot | Communication | community/devlikeapro-n8n-nodes-chatwoot.md | n8n node to connect with ChatWoot |
-| n8n-nodes-powerbi | Utilities | community/n8n-nodes-powerbi.md | n8n nodes for integration with Power BI APIs |
-| n8n-nodes-docx-converter | Document | community/n8n-nodes-docx-converter.md | A node to convert Docx to Text |
-| n8n-nodes-notionmd | Data Processing | community/n8n-nodes-notionmd.md | n8n node to transform markdown to notion blocks |
-| n8n-nodes-puppeteer | Web Scraping | community/n8n-nodes-puppeteer.md | n8n node for browser automation using Puppeteer |
-| @asaasbr/n8n-nodes-asaas | Utilities | community/asaasbr-n8n-nodes-asaas.md | n8n nodes for integrating with the Asaas API |
-| @apify/n8n-nodes-apify | Utilities | community/apify-n8n-nodes-apify.md | n8n nodes for Apify |
-| n8n-nodes-youtube-transcript-api | Utilities | community/n8n-nodes-youtube-transcript-api.md | YouTube Transcript API Nodes for n8n |
-| @pixelinfinito/n8n-nodes-chatwoot | Communication | community/pixelinfinito-n8n-nodes-chatwoot.md | n8n community node for Chatwoot API integration |
-| @mendable/n8n-nodes-firecrawl | AI Tools | community/mendable-n8n-nodes-firecrawl.md | Official Firecrawl nodes for n8n - scrape, crawl,  |
-| n8n-nodes-thong-zalo-test-trial | Utilities | community/n8n-nodes-thong-zalo-test-trial.md | Các node hỗ trợ Zalo cho n8n |
+| n8n-nodes-cronlytic | Utilities | community/n8n-nodes-cronlytic.md | n8n community node for Cronlytic advanced cron sch |
+| n8n-nodes-efibank | Utilities | community/n8n-nodes-efibank.md | Nó personalizado para integração com as APIs Cobra |
+| n8n-nodes-serpapi | Web Scraping | community/n8n-nodes-serpapi.md | Official n8n node for SerpApi |
+| n8n-nodes-bitrix | Utilities | community/n8n-nodes-bitrix.md | n8n node for bitrix rest api |
+| n8n-nodes-pdfvector | AI Tools | community/n8n-nodes-pdfvector.md | n8n community node for PDF Vector — parse PDF, Wor |
+| n8n-nodes-instagram-token | Utilities | community/n8n-nodes-instagram-token.md | N8N nodes for Instagram API integration with acces |
+| n8n-nodes-htmlcsstopdf | AI Tools | community/n8n-nodes-htmlcsstopdf.md | n8n community node to convert HTML and CSS to PDF  |
+| @devlikeapro/n8n-nodes-waha | Communication | community/devlikeapro-n8n-nodes-waha.md | n8n to connect with WAHA (Whatsapp HTTP API) |
+| n8n-nodes-pdfkit | Document | community/n8n-nodes-pdfkit.md | Node for using PDFKit to tranform images into PDF, |
 | n8n-nodes-transcript-lol | AI Tools | community/n8n-nodes-transcript-lol.md | n8n community node for Transcript.lol - AI-powered |
+| n8n-nodes-openpix | Utilities | community/n8n-nodes-openpix.md | n8n nodes for OpenPix |
+| n8n-nodes-thong-zalo-test-trial | Utilities | community/n8n-nodes-thong-zalo-test-trial.md | Các node hỗ trợ Zalo cho n8n |
+| @elevenlabs/n8n-nodes-elevenlabs | AI Tools | community/elevenlabs-n8n-nodes-elevenlabs.md | Official ElevenLabs node for n8n |
+| n8n-nodes-weld | Utilities | community/n8n-nodes-weld.md | n8n community node for Weld — web scraping across  |
 | n8n-nodes-mtai-zalo-test-trial | AI Tools | community/n8n-nodes-mtai-zalo-test-trial.md | Các node hỗ trợ Zalo cho n8n |
+| n8n-nodes-zapi | Communication | community/n8n-nodes-zapi.md | Custom n8n node for Z-API. |
+| n8n-nodes-autype | Document | community/n8n-nodes-autype.md | n8n community node for the Autype Developer API —  |
+| n8n-nodes-instagram-integrations | Utilities | community/n8n-nodes-instagram-integrations.md | N8N nodes for Instagram API integration with OAuth |
 
 For detailed information, see [community/README.md](community/README.md).
 

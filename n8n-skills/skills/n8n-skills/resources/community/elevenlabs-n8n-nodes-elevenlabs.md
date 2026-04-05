@@ -4,7 +4,7 @@
 
 - Package: `@elevenlabs/n8n-nodes-elevenlabs`
 - Category: 🤖 AI & Voice Tools
-- Version: 0.2.3
+- Version: 0.2.4
 - Maintainer: GitHub Actions
 - npm: [View Package](https://www.npmjs.com/package/@elevenlabs/n8n-nodes-elevenlabs)
 - Repository: [View Source](https://github.com/elevenlabs/elevenlabs-n8n)

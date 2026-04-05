@@ -4,7 +4,7 @@
 
 - Package: `n8n-nodes-serpapi`
 - Category: 🕷️ Web Scraping & Browser Automation
-- Version: 0.1.8
+- Version: 0.1.10
 - Maintainer: serpapi
 - npm: [View Package](https://www.npmjs.com/package/n8n-nodes-serpapi)
 - Repository: [View Source](https://github.com/serpapi/n8n-nodes-serpapi)
@@ -41,7 +41,7 @@ Get live Google Search data and more from SerpApi's official node
 - **Google AI Mode** (`google_ai_mode`)
 - **Google AI Overview** (`google_ai_overview`)
 - **Google Autocomplete** (`google_autocomplete`)
-- ... and 26 more operations
+- ... and 27 more operations
 
 #### Core Properties
 

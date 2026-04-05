@@ -4,7 +4,7 @@
 
 - Package: `n8n-nodes-transcript-lol`
 - Category: 🤖 AI & Voice Tools
-- Version: 0.3.2
+- Version: 0.3.3
 - Maintainer: pkpio
 - npm: [View Package](https://www.npmjs.com/package/n8n-nodes-transcript-lol)
 - Repository: [View Source](https://github.com/transcript-lol/n8n-nodes-transcript-lol)
