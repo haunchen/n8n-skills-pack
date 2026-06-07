@@ -4,14 +4,14 @@
 
 - Package: `n8n-nodes-palatine-speech`
 - Category: 🤖 AI & Voice Tools
-- Version: 1.0.1
+- Version: 1.1.1
 - Maintainer: palatine_zealot
 - npm: [View Package](https://www.npmjs.com/package/n8n-nodes-palatine-speech)
 - Repository: [View Source](https://github.com/PalatineVision/n8n-nodes-palatine-speech)
 
 ## Description
 
-Official n8n node for Palatine Speech API: transcription, diarization, sentiment analysis, summarization and more
+n8n node for integrating Palatine Speech API into workflow
 
 ## Installation
 
@@ -23,26 +23,37 @@ n8n-nodes-palatine-speech
 
 ### Palatine Speech
 
-- Node Type: `n8n-nodes-palatine-speech.PalatineSpeechNode`
-- Version: 1
+- Node Type: `n8n-nodes-palatine-speech.palatineSpeech`
+- Version: 3
 - Requires Credentials: Yes
 
-Use Palatine Speech API to transcribe audio, diarize speakers, analyze sentiment, generate AI summaries and more
+Transcribe audio, diarize speakers, analyze sentiment, generate AI summaries, or use OpenAI-compatible LLM Chat Completions via Palatine. Keywords: n8n-community-node-package, n8n, palatine, speech-to-text, transcribe, transcription, stt, audio, ai, automation, voice-to-text, speech-recognition, audio-transcription, audio2text, audio-processing, diarization, speaker-diarization, speaker-segmentation, summarization, audio-summarization, sentiment-analysis, emotion-detection, tone-analysis, llm, chat-completions, openai-compatible, structured-output, json-schema
+
+#### Available Operations
+
+- **Transcribe** (`transcribe`)
+  Convert speech in an audio file to text
+- **Diarize** (`diarize`)
+  Split audio by speakers and return timestamps
+- **Sentiment Analysis** (`sentiment`)
+  Detect sentiment/emotion in audio
+- **Summarize File** (`summarizeFile`)
+  Generate an AI summary of an uploaded file
 
 #### Core Properties
 
 | Property | Type | Required | Default |
 |----------|------|----------|---------|
-| `task` | options | No | `"transcribe"` |
+| `llmModel` | resourceLocator | Yes | `{"mode":"list","value":""}` |
+| `userMessage` | string | Yes | `""` |
+| `binaryProperty` | string | Yes | `"data"` |
+| `binaryProperty` | string | Yes | `"data"` |
+| `resource` | options | No | `"audio"` |
+| `operation` | options | No | `"transcribe"` |
+| `operation` | options | No | `"chatCompletions"` |
 | `model` | options | No | `"palatine_small"` |
+| `responseFormat` | options | No | `"json"` |
 | `summarizeTask` | options | No | `"meeting_summary"` |
-| `binaryProperty` | string | No | `"data"` |
-| `pollIntervalMs` | number | No | `500` |
-| `pollIntervalMsSummarize` | number | No | `20000` |
-| `maxPollAttempts` | number | No | `200` |
-| `maxPollAttemptsSummarize` | number | No | `500` |
-| `summarizePrompt` | string | No | `""` |
-| `summarizeThinking` | boolean | No | `false` |
 
 #### Connection
 
@@ -54,13 +65,21 @@ Use Palatine Speech API to transcribe audio, diarize speakers, analyze sentiment
 ```json
 {
   "name": "Palatine Speech",
-  "type": "n8n-nodes-palatine-speech.PalatineSpeechNode",
-  "typeVersion": 1,
+  "type": "n8n-nodes-palatine-speech.palatineSpeech",
+  "typeVersion": 3,
   "position": [
     250,
     300
   ],
-  "parameters": {}
+  "parameters": {
+    "llmModel": {
+      "mode": "list",
+      "value": ""
+    },
+    "userMessage": "",
+    "binaryProperty": "data",
+    "operation": "transcribe"
+  }
 }
 ```
 
