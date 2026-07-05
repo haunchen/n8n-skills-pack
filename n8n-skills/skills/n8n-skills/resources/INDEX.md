@@ -669,35 +669,35 @@ Popular community-developed node packages (30 packages).
 | Package Name | Category | File Path | Description |
 |--------------|----------|-----------|-------------|
 | n8n-nodes-evolution-api | Communication | community/n8n-nodes-evolution-api.md | A Evolution API é um hub de canais com foco no Wha |
-| n8n-nodes-palatine-speech | AI Tools | community/n8n-nodes-palatine-speech.md | n8n node for integrating Palatine Speech API into  |
-| n8n-nodes-chat-data | Communication | community/n8n-nodes-chat-data.md | Chatdata integration for n8n. Manage chatbots, sen |
-| n8n-nodes-bitrix | Utilities | community/n8n-nodes-bitrix.md | n8n node for bitrix rest api |
-| n8n-nodes-openpix | Utilities | community/n8n-nodes-openpix.md | n8n nodes for OpenPix |
-| n8n-nodes-kommo | Utilities | community/n8n-nodes-kommo.md | n8n node for Kommo Api |
-| n8n-nodes-globals | Utilities | community/n8n-nodes-globals.md | N8N community node that allows users to create glo |
-| n8n-nodes-rd-station-crm | Utilities | community/n8n-nodes-rd-station-crm.md | Nós personalizados do n8n para integração com a AP |
-| n8n-nodes-mcp | AI Tools | community/n8n-nodes-mcp.md | MCP nodes for n8n  |
-| @asaasbr/n8n-nodes-asaas | Utilities | community/asaasbr-n8n-nodes-asaas.md | n8n nodes for integrating with the Asaas API |
-| n8n-nodes-evolution-api-media-downloader | Communication | community/n8n-nodes-evolution-api-media-downloader.md | Download Media from Evolution API data message |
-| @winth03/n8n-nodes-minio | Utilities | community/winth03-n8n-nodes-minio.md | n8n node wrapper for the official MinIO JavaScript |
-| n8n-nodes-chatwoot | Communication | community/n8n-nodes-chatwoot.md | This is an n8n community node. It lets you use Cha |
-| @digital-boss/n8n-nodes-odoo-trigger | Utilities | community/digital-boss-n8n-nodes-odoo-trigger.md | Odoo-trigger support for n8n |
-| n8n-nodes-evo-go | Communication | community/n8n-nodes-evo-go.md | Evolution Go API is a REST API developed in Go to  |
-| n8n-nodes-transcript-lol | AI Tools | community/n8n-nodes-transcript-lol.md | n8n community node for Transcript.lol - AI-powered |
-| n8n-nodes-odoo-enhanced | Utilities | community/n8n-nodes-odoo-enhanced.md | Enhanced Odoo node for n8n with features from PR # |
 | @devlikeapro/n8n-nodes-chatwoot | Communication | community/devlikeapro-n8n-nodes-chatwoot.md | n8n node to connect with ChatWoot |
+| n8n-nodes-openpix | Utilities | community/n8n-nodes-openpix.md | n8n nodes for OpenPix |
+| n8n-nodes-bitrix | Utilities | community/n8n-nodes-bitrix.md | n8n node for bitrix rest api |
+| n8n-nodes-pdfkit | Document | community/n8n-nodes-pdfkit.md | Node for using PDFKit to tranform images into PDF, |
+| n8n-nodes-mcp | AI Tools | community/n8n-nodes-mcp.md | MCP nodes for n8n  |
+| n8n-nodes-serpapi | Web Scraping | community/n8n-nodes-serpapi.md | Official n8n node for SerpApi |
+| @searchapi/n8n-nodes-searchapi | Web Scraping | community/searchapi-n8n-nodes-searchapi.md | SearchApi.io nodes for n8n |
+| n8n-nodes-templated | Document | community/n8n-nodes-templated.md | n8n node to automate the generation of images, vid |
+| n8n-nodes-palatine-speech | AI Tools | community/n8n-nodes-palatine-speech.md | n8n node for integrating Palatine Speech API into  |
+| @pdfgeneratorapi/n8n-nodes-pdf-generator-api | Document | community/pdfgeneratorapi-n8n-nodes-pdf-generator-api.md | PDF Generator API Node for n8n |
+| n8n-nodes-pdf4me | Document | community/n8n-nodes-pdf4me.md | n8n community node for PDF4me API integration |
+| n8n-nodes-rd-station-crm | Utilities | community/n8n-nodes-rd-station-crm.md | Nós personalizados do n8n para integração com a AP |
+| n8n-nodes-globals | Utilities | community/n8n-nodes-globals.md | N8N community node that allows users to create glo |
+| n8n-nodes-pdfco | Document | community/n8n-nodes-pdfco.md | Pdf.co nodes for n8n |
+| @winth03/n8n-nodes-minio | Utilities | community/winth03-n8n-nodes-minio.md | n8n node wrapper for the official MinIO JavaScript |
+| n8n-nodes-placid | Utilities | community/n8n-nodes-placid.md | n8n node to interact with Placid API for creative  |
+| n8n-nodes-upload-post | Utilities | community/n8n-nodes-upload-post.md | n8n community node for Upload Post |
 | @apify/n8n-nodes-apify | Utilities | community/apify-n8n-nodes-apify.md | n8n nodes for Apify |
-| n8n-nodes-thong-zalo-test-trial | Utilities | community/n8n-nodes-thong-zalo-test-trial.md | Các node hỗ trợ Zalo cho n8n |
-| @elevenlabs/n8n-nodes-elevenlabs | AI Tools | community/elevenlabs-n8n-nodes-elevenlabs.md | Official ElevenLabs node for n8n |
+| n8n-nodes-businessmap | Utilities | community/n8n-nodes-businessmap.md | An n8n community node package that integrates with |
+| n8n-nodes-yepcode | Utilities | community/n8n-nodes-yepcode.md | Custom n8n node module for YepCode |
+| n8n-nodes-a2a | Document | community/n8n-nodes-a2a.md | n8n community node for A2A (Account to Account) tr |
+| n8n-nodes-kipps | Communication | community/n8n-nodes-kipps.md | Custom Kipps.ai integration node for n8n — Chatbot |
+| n8n-nodes-evolution-api-media-downloader | Communication | community/n8n-nodes-evolution-api-media-downloader.md | Download Media from Evolution API data message |
 | n8n-nodes-mtai-zalo-test-trial | AI Tools | community/n8n-nodes-mtai-zalo-test-trial.md | Các node hỗ trợ Zalo cho n8n |
-| n8n-nodes-puppeteer | Web Scraping | community/n8n-nodes-puppeteer.md | n8n node for browser automation using Puppeteer |
-| n8n-nodes-instagram-integrations | Utilities | community/n8n-nodes-instagram-integrations.md | N8N nodes for Instagram API integration with OAuth |
-| n8n-nodes-thang-zalo-app | Utilities | community/n8n-nodes-thang-zalo-app.md | Các node udng2 để hỗ trợ người dùng zalo |
-| n8n-nodes-htmlcsstopdf | AI Tools | community/n8n-nodes-htmlcsstopdf.md | n8n community node to convert HTML and CSS to PDF  |
-| n8n-nodes-docx-to-md | Document | community/n8n-nodes-docx-to-md.md | n8n node to convert Docx files to Markdown |
-| @mookielianhd/n8n-nodes-instagram | Utilities | community/mookielianhd-n8n-nodes-instagram.md | Instagram node for n8n |
-| @mazix/n8n-nodes-converter-documents | Document | community/mazix-n8n-nodes-converter-documents.md | n8n node to convert various document formats (DOCX |
-| n8n-nodes-qdrant | Utilities | community/n8n-nodes-qdrant.md | Official n8n node to interface with Qdrant - https |
+| n8n-nodes-transcript-lol | AI Tools | community/n8n-nodes-transcript-lol.md | n8n community node for Transcript.lol - AI-powered |
+| @asaasbr/n8n-nodes-asaas | Utilities | community/asaasbr-n8n-nodes-asaas.md | n8n nodes for integrating with the Asaas API |
+| n8n-nodes-thong-zalo-test-trial | Utilities | community/n8n-nodes-thong-zalo-test-trial.md | Các node hỗ trợ Zalo cho n8n |
+| n8n-nodes-chatwoot | Communication | community/n8n-nodes-chatwoot.md | This is an n8n community node. It lets you use Cha |
+| n8n-nodes-kommo | Utilities | community/n8n-nodes-kommo.md | n8n node for Kommo Api |
 
 For detailed information, see [community/README.md](community/README.md).
 
