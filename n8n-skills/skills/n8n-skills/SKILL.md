@@ -4,7 +4,7 @@ description: "Use when building or troubleshooting n8n workflows. Covers node di
 license: MIT
 metadata:
   author: Frank Chen
-  version: "2.18.0"
+  version: "2.19.0"
 ---
 
 # n8n Workflow Automation Skill Pack
